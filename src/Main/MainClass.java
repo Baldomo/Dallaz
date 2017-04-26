@@ -16,14 +16,14 @@ public class MainClass {
         frame.setResizable(false);
         frame.setSize(600, 400);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.add(new CustomButton(100, 30));
+        frame.add(new CustomButton(200, 60, "Prova"));
         frame.add(initContainer());
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
     public static JPanel initContainer() {
-        SpringLayout layout = new SpringLayout();
+        //SpringLayout layout = new SpringLayout();
 
         JPanel root = new JPanel();
         root.setBackground(Color.YELLOW);
