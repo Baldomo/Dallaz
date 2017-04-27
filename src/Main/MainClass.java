@@ -13,7 +13,7 @@ public class MainClass {
 
     public static void main(String[] args) {
 
-        JButton btnProva = new CustomButton(500, 150, "Prova");
+        JButton btnProva = new CustomButton(200, 50, "Prova");
 
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Test");
@@ -25,6 +25,7 @@ public class MainClass {
 
             frame.add(btnProva);
 
+            //frame.pack();
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });
