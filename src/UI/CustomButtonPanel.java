@@ -12,7 +12,7 @@ import java.io.IOException;
  * Created by Leonardo Baldin on 26/04/17.
  */
 
-public class CustomButton extends JPanel {
+public class CustomButtonPanel extends JPanel {
 
     private static final String FONT_FILE = "MotionPicture.ttf";
     private static final float FONT_SIZE = 40f;
@@ -25,9 +25,9 @@ public class CustomButton extends JPanel {
 
     private Color textColor = Color.WHITE;
 
-    private CustomButton() {}
+    private CustomButtonPanel() {}
 
-    public CustomButton(int larghezza, int altezza, @Nullable String testo) {
+    public CustomButtonPanel(int larghezza, int altezza, @Nullable String testo) {
         super();
         setSize(new Dimension(larghezza, altezza));
         _initBackground(DEFAULT_COLOR);
