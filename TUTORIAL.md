@@ -33,12 +33,12 @@
 
 1. *Dopo aver fatto delle modifiche*, inserire nel cmd il comando `git commit -m
     "Messaggio del commit"`, in "Messaggio del commit" deve contenere una piccola descrizione
-    di cosa si Ã¨ cambiato/aggiunto.
+    di cosa si è cambiato/aggiunto. **Tenere le virgolette!**
 
         Questo fa sapere alla repo quali file sono stati modificati e quindi vanno aggiornati
         (git non carica sempre tutto quanto sulla repo, ma solo le modifiche, per risparmiare tempo)
 
-    **Se un file prima non presente Ã¨ stato creato**, inserire prima il comando
+    **Se un file prima non presente è stato creato**, inserire prima il comando
         `git add -A`.
 
         Questo fa sapere alla repo che va aggiunto un file che prima non esisteva
