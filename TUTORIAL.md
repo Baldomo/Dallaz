@@ -1,5 +1,13 @@
 # TUTORIAL
 
+### Java:
+- Ultima versione ***ufficiale***: 8u131
+    - [Windows](http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-windows-x64.exe)
+    - [Mac](http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-macosx-x64.dmg)
+- Ultimissima versione ***sviluppatore***: 8u152
+    - [Windows](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-windows-x64-19_apr_2017.exe)
+    - [Mac](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-macosx-x86_64-19_apr_2017.dmg)
+
 ## Windows:
 
 #### Installazione:
