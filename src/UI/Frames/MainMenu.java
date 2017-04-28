@@ -2,6 +2,7 @@ package UI.Frames;
 
 import UI.Elements.CustomButton;
 import Utilities.ImageResizer;
+import com.sun.istack.internal.Nullable;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -19,7 +20,7 @@ public class MainMenu extends JFrame {
 
     private JFrame root = new JFrame();
 
-    public MainMenu(String title) {
+    public MainMenu(@Nullable String title) {
         super();
 
         try {
