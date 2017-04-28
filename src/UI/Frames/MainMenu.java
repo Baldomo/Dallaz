@@ -1,9 +1,12 @@
 package UI.Frames;
 
 import UI.Elements.CustomButton;
+import Utilities.ImageResizer;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 /**
  * Created by Leonardo Baldin on 28/04/17.
@@ -11,10 +14,19 @@ import java.awt.*;
 
 public class MainMenu extends JFrame {
 
+    private static Image BACKGROUND_IMAGE = null;
+    private static final String IMAGE_NAME = "/UI/Frames/background.png";
+
     private JFrame root = new JFrame();
 
     public MainMenu(String title) {
         super();
+
+        try {
+            BACKGROUND_IMAGE = ImageIO.read(getClass().getResource(IMAGE_NAME));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         SwingUtilities.invokeLater(() -> {
             root.setTitle(title);
@@ -33,7 +45,6 @@ public class MainMenu extends JFrame {
 
         private MainPanel() {
             super();
-            setBackground(Color.YELLOW);
             _initPanel();
         }
 
@@ -41,11 +52,13 @@ public class MainMenu extends JFrame {
         protected void paintComponent(Graphics g) {
             Polygon side = new Polygon();
             side.addPoint(0, 0);
-            side.addPoint((int) root.getWidth()/5, 0);
-            side.addPoint((int) root.getWidth()/7, (int) root.getHeight());
-            side.addPoint(0, (int) root.getHeight());
+            side.addPoint(root.getWidth() /5, 0);
+            side.addPoint(root.getWidth() /7, root.getHeight());
+            side.addPoint(0, root.getHeight());
 
+            g.drawImage(ImageResizer.resizeImage(BACKGROUND_IMAGE, root.getWidth(), root.getHeight(), true), 0, 0, null);
             g.setColor(new Color(0, 0, 0, 175));
+            setBackground(Color.YELLOW);
             g.fillPolygon(side);
         }
 
