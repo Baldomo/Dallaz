@@ -25,7 +25,7 @@
 
 #### Clonazione repo:
 1. Quando siete stati aggiunti alla repo, aprire il terminale (cmd)
-    e inserire il comando `git clone https://Baldomo@bitbucket.org/Baldomo/dallaz.git`
+    e inserire il comando che potete trovare cliccando sulla voce "Clone" del menu laterale, sotto "Actions"
 
     **Necessario solo al primo accesso**
 
