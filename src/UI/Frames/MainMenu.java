@@ -1,6 +1,7 @@
 package UI.Frames;
 
 import UI.Elements.CustomButton;
+import Utilities.DiagonalLayout;
 import Utilities.ImageResizer;
 import com.sun.istack.internal.Nullable;
 
@@ -16,7 +17,7 @@ import java.io.IOException;
 public class MainMenu extends JFrame {
 
     private static Image BACKGROUND_IMAGE = null;
-    private static final String IMAGE_NAME = "/UI/Frames/background.png";
+    private static final String IMAGE_NAME = "/Resources/background.png";
 
     private JFrame root = new JFrame();
 
@@ -32,7 +33,7 @@ public class MainMenu extends JFrame {
         SwingUtilities.invokeLater(() -> {
             root.setTitle(title);
             root.setResizable(false);
-            root.setSize(600, 350);
+            root.setSize(1200, 720);
             root.setLocationRelativeTo(null);
             root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,9 +70,9 @@ public class MainMenu extends JFrame {
             JButton btn3 = new CustomButton(100, 25, "Prova 1");
             JButton btn4 = new CustomButton(100, 25, "Prova 1");
 
-            GroupLayout layout = new GroupLayout(this);
+            /* GroupLayout layout = new GroupLayout(this);
             this.setLayout(layout);
-            layout.setAutoCreateGaps(true);
+            //layout.setAutoCreateGaps(true);
             layout.setAutoCreateContainerGaps(true);
 
             layout.setVerticalGroup(
@@ -83,13 +84,20 @@ public class MainMenu extends JFrame {
             );
 
             layout.setHorizontalGroup(
-                    layout.createParallelGroup()
+                    layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                            .addGap(40)
                             .addComponent(btn1)
                             .addComponent(btn2)
                             .addComponent(btn3)
                             .addComponent(btn4)
 
-            );
+            ); */
+
+            this.setLayout(new DiagonalLayout(5));
+            this.add(btn1);
+            this.add(btn2);
+            this.add(btn3);
+            this.add(btn4);
         }
 
     }
