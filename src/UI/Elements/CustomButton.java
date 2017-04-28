@@ -26,10 +26,10 @@ public class CustomButton extends JButton {
     public CustomButton(int larghezza, int altezza, @Nullable String testo) {
         super();
         _initFont();
-        setText(testo);
+        this.setText(testo);
 
-        setPreferredSize(new Dimension(larghezza, altezza));
-        setSize(larghezza, altezza);
+        this.setPreferredSize(new Dimension(larghezza, altezza));
+        this.setSize(larghezza, altezza);
 
         setFocusable(false);
         setContentAreaFilled(false);

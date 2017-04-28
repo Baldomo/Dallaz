@@ -1,7 +1,6 @@
 package UI.Frames;
 
 import UI.Elements.CustomButton;
-import Utilities.DiagonalLayout;
 import Utilities.ImageResizer;
 import com.sun.istack.internal.Nullable;
 
@@ -68,15 +67,16 @@ public class MainMenu extends JFrame {
             JButton btn1 = new CustomButton(100, 25, "Prova 1");
             JButton btn2 = new CustomButton(100, 25, "Prova 1");
             JButton btn3 = new CustomButton(100, 25, "Prova 1");
-            JButton btn4 = new CustomButton(100, 25, "Prova 1");
+            JButton btn4 = new CustomButton(50, 25, "Prova 1");
 
-            /* GroupLayout layout = new GroupLayout(this);
+            GroupLayout layout = new GroupLayout(this);
             this.setLayout(layout);
-            //layout.setAutoCreateGaps(true);
+            layout.setAutoCreateGaps(true);
             layout.setAutoCreateContainerGaps(true);
 
             layout.setVerticalGroup(
                     layout.createSequentialGroup()
+                            .addGap(root.getHeight()/10)
                             .addComponent(btn1)
                             .addComponent(btn2)
                             .addComponent(btn3)
@@ -84,20 +84,15 @@ public class MainMenu extends JFrame {
             );
 
             layout.setHorizontalGroup(
-                    layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                            .addGap(40)
+                    layout.createParallelGroup()
+                            .addGap(root.getWidth()/15)
                             .addComponent(btn1)
                             .addComponent(btn2)
                             .addComponent(btn3)
                             .addComponent(btn4)
 
-            ); */
+            );
 
-            this.setLayout(new DiagonalLayout(5));
-            this.add(btn1);
-            this.add(btn2);
-            this.add(btn3);
-            this.add(btn4);
         }
 
     }
