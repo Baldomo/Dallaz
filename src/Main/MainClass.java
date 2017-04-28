@@ -24,8 +24,6 @@ public class MainClass {
             frame.setBackground(Color.YELLOW);
 
             frame.add(btnProva);
-
-            //frame.pack();
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });

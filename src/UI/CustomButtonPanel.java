@@ -12,6 +12,7 @@ import java.io.IOException;
  * Created by Leonardo Baldin on 26/04/17.
  */
 
+@Deprecated
 public class CustomButtonPanel extends JPanel {
 
     private static final String FONT_FILE = "MotionPicture.ttf";
