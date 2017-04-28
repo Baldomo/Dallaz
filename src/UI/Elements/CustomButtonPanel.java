@@ -1,4 +1,4 @@
-package UI;
+package UI.Elements;
 
 import com.sun.istack.internal.Nullable;
 

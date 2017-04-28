@@ -1,4 +1,4 @@
-package UI;
+package UI.Elements;
 
 import com.sun.istack.internal.Nullable;
 
@@ -28,6 +28,7 @@ public class CustomButton extends JButton {
         _initFont();
         setText(testo);
 
+        setPreferredSize(new Dimension(larghezza, altezza));
         setSize(larghezza, altezza);
 
         setFocusable(false);
