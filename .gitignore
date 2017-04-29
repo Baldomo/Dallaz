@@ -1,7 +1,13 @@
-#Eclipse
+# Eclipse
 .classpath
 .project
 .settings/
+
+# NetBeans
+build/
+build.xml
+manifest.mf
+nbproject/
 
 # Intellij
 .idea/
