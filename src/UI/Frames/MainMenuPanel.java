@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import javax.swing.border.EmptyBorder;
 
 /**
  * Created by Leonardo Baldin on 28/04/17.
@@ -49,19 +50,19 @@ public class MainMenuPanel extends JPanel {
         }
 
         private void _initPanel() {
-            JButton btn1 = new CustomButton(100, 25, "Prova 1");
-            JButton btn2 = new CustomButton(100, 25, "Prova 1");
-            JButton btn3 = new CustomButton(100, 25, "Prova 1");
-            JButton btn4 = new CustomButton(100, 25, "Prova 1");
+            JButton btn1 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 1");
+            JButton btn2 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 2");
+            JButton btn3 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 3");
+            JButton btn4 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 4");
 
             GroupLayout layout = new GroupLayout(this);
             this.setLayout(layout);
             layout.setAutoCreateGaps(true);
             layout.setAutoCreateContainerGaps(true);
+            layout.linkSize(SwingConstants.HORIZONTAL, btn1, btn2, btn3, btn4);
 
             layout.setVerticalGroup(
                     layout.createSequentialGroup()
-                            .addGap(root.getHeight()/10)
                             .addComponent(btn1)
                             .addComponent(btn2)
                             .addComponent(btn3)
@@ -70,13 +71,14 @@ public class MainMenuPanel extends JPanel {
 
             layout.setHorizontalGroup(
                     layout.createParallelGroup()
-                            .addGap(root.getWidth()/15)
                             .addComponent(btn1)
                             .addComponent(btn2)
                             .addComponent(btn3)
                             .addComponent(btn4)
 
             );
+            
+            this.setBorder(new EmptyBorder(new Insets(root.getHeight()/20, root.getWidth()/20, 0, 0)));
         }
 
 }
