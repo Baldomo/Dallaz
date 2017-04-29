@@ -8,6 +8,11 @@
     - [Windows](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-windows-x64-19_apr_2017.exe)
     - [Mac](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-macosx-x86_64-19_apr_2017.dmg)
 
+### NetBeans IDE:
+- Ultima versione: 8.2
+    - [Windows](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-windows.exe)
+    - [Mac](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-macosx.dmg)
+
 ## Windows:
 
 #### Installazione:
