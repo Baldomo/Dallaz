@@ -2,7 +2,7 @@ package UI.Frames;
 
 import UI.Elements.CustomButton;
 import Utilities.ImageResizer;
-import com.sun.istack.internal.Nullable;
+import com.sun.istack.internal.NotNull;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -13,39 +13,24 @@ import java.io.IOException;
  * Created by Leonardo Baldin on 28/04/17.
  */
 
-public class MainMenu extends JFrame {
+
+public class MainMenuPanel extends JPanel {
 
     private static Image BACKGROUND_IMAGE = null;
     private static final String IMAGE_NAME = "/Resources/background.png";
 
-    private JFrame root = new JFrame();
+        private JFrame root = null;
 
-    public MainMenu(@Nullable String title) {
-        super();
-
-        try {
-            BACKGROUND_IMAGE = ImageIO.read(getClass().getResource(IMAGE_NAME));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        SwingUtilities.invokeLater(() -> {
-            root.setTitle(title);
-            root.setResizable(false);
-            root.setSize(1200, 720);
-            root.setLocationRelativeTo(null);
-            root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-            root.add(new MainPanel());
-            root.setVisible(true);
-        });
-
-    }
-
-    class MainPanel extends JPanel {
-
-        private MainPanel() {
+        public MainMenuPanel(@NotNull JFrame rootFrame) {
             super();
+            this.root = rootFrame;
+
+            try {
+                BACKGROUND_IMAGE = ImageIO.read(getClass().getResource(IMAGE_NAME));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             _initPanel();
         }
 
@@ -67,7 +52,7 @@ public class MainMenu extends JFrame {
             JButton btn1 = new CustomButton(100, 25, "Prova 1");
             JButton btn2 = new CustomButton(100, 25, "Prova 1");
             JButton btn3 = new CustomButton(100, 25, "Prova 1");
-            JButton btn4 = new CustomButton(50, 25, "Prova 1");
+            JButton btn4 = new CustomButton(100, 25, "Prova 1");
 
             GroupLayout layout = new GroupLayout(this);
             this.setLayout(layout);
@@ -92,9 +77,6 @@ public class MainMenu extends JFrame {
                             .addComponent(btn4)
 
             );
-
         }
-
-    }
 
 }
