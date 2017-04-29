@@ -48,8 +48,8 @@ Ultima versione: 8.2
 #### Sincronizzazione del codice:
 1. *Ad ogni accesso*, inserire nel cmd il comando `git pull`
 
-   >Questo aggiorna il codice salvato in locale rispetto a quello nella repo, scaricando
-   >le modifiche degli altri
+    >Questo aggiorna il codice salvato in locale rispetto a quello nella repo, scaricando
+    >le modifiche degli altri
 
 
 1. *Dopo aver fatto delle modifiche*, inserire nel cmd il comando `git commit -m
@@ -66,8 +66,8 @@ Ultima versione: 8.2
 
 1. Dopo aver svolto il `commit`, inserire il comando `git push`
 
-   >Questo carica i file modificati/creati sulla repo online, permettendo poi
-   >agli altri di poter aggiornare i propri file locali
+    >Questo carica i file modificati/creati sulla repo online, permettendo poi
+    >agli altri di poter aggiornare i propri file locali
 
 
 ^_^
