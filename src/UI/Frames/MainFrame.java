@@ -15,16 +15,19 @@ public class MainFrame extends JFrame {
     public MainFrame(@Nullable String title) {
         super();
 
-        SwingUtilities.invokeLater(() -> {
-            root.setTitle(title);
-            root.setResizable(false);
-            root.setSize(1200, 720);
-            root.setLocationRelativeTo(null);
-            root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-            root.add(new MainMenuPanel(root));
-
-            root.setVisible(true);
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                root.setTitle(title);
+                root.setResizable(false);
+                root.setSize(1200, 720);
+                root.setLocationRelativeTo(null);
+                root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                
+                root.add(new MainMenuPanel(root));
+                
+                root.setVisible(true);
+            }
         });
 
     }
