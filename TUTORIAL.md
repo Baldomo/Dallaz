@@ -3,19 +3,19 @@
 ------------------------
 
 ### Java:
-Ultima versione ***ufficiale***: 8u131
-    - [Windows](http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-windows-x64.exe)
-    - [Mac](http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-macosx-x64.dmg)
 
-Ultimissima versione ***sviluppatore***: 8u152
-    - [Windows](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-windows-x64-19_apr_2017.exe)
-    - [Mac](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-macosx-x86_64-19_apr_2017.dmg)
+|       | Windows                                                                                                                        | Mac                                                                                                                           |
+|-------|:------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
+| 8u152 (***ultima beta***)| [Download](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-windows-x64-19_apr_2017.exe)       | [Download](http://download.java.net/java/jdk8u152/archive/b03/binaries/jdk-8u152-ea-bin-b03-macosx-x86_64-19_apr_2017.dmg)    |
+| 8u131 (**ufficiale**) | [Download](http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-windows-x64.exe)   | [Download](http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-macosx-x64.dmg)   |
 
 ### NetBeans IDE:
 Ultima versione: 8.2
-    - [Windows](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-windows.exe)
-    - [Mac](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-macosx.dmg)   
+
+ - [Windows](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-windows.exe)
+ - [Mac](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-macosx.dmg)   
     
+    &nbsp;
 
 ## Windows:
 
@@ -30,6 +30,7 @@ Ultima versione: 8.2
 1. Registrarsi su [BitBucket](bitbucket.org)
 1. Mandare la propria email al sommo capo   
 
+&nbsp;
 
 ## Generale:
 
@@ -54,8 +55,9 @@ Ultima versione: 8.2
     >Questo aggiorna il codice salvato in locale rispetto a quello nella repo, scaricando
     >le modifiche degli altri   
     
+    &nbsp;
 
-1. *Dopo aver fatto delle modifiche*, inserire nel cmd il comando `git commit -m
+2. *Dopo aver fatto delle modifiche*, inserire nel cmd il comando `git commit -m
     "Messaggio del commit"`, in "Messaggio del commit" deve contenere una piccola descrizione
     di cambiamenti/aggiunte. **Tenere le virgolette!**
 
@@ -67,12 +69,13 @@ Ultima versione: 8.2
 
     >Questo fa sapere alla repo che va aggiunto un file che prima non esisteva   
     
+    &nbsp;
 
-1. Dopo aver svolto il `commit`, inserire il comando `git push`
+2. Dopo aver svolto il `commit`, inserire il comando `git push`
 
     >Questo carica i file modificati/creati sulla repo online, permettendo poi
-    >agli altri di poter aggiornare i propri file locali   
+    >agli altri di poter aggiornare i propri file locali
     
-
+    &nbsp;
 
 ^_^
