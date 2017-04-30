@@ -18,7 +18,7 @@ public class MainFrame extends JFrame {
         SwingUtilities.invokeLater(() -> {
             root.setTitle(title);
             root.setResizable(false);
-            root.setSize(1200, 720);
+            root.setSize(1280, 720);
             root.setLocationRelativeTo(null);
             root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 

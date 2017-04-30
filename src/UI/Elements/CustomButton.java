@@ -22,6 +22,7 @@ public class CustomButton extends JButton {
     private static final Color DEFAULT_FONT_COLOR = Color.WHITE;
     private static final Color PRESSED_FONT_COLOR = Color.BLACK.brighter();
     private float fontSize = 40f;
+    private Font font;
 
     public CustomButton(int larghezza, int altezza, @Nullable String testo) {
         super();
@@ -40,7 +41,7 @@ public class CustomButton extends JButton {
     */
     private void _initFont() {
         try {
-            Font font = Font.createFont(Font.TRUETYPE_FONT, getClass().getClassLoader().getResourceAsStream(FONT_FILE));
+            font = Font.createFont(Font.TRUETYPE_FONT, getClass().getClassLoader().getResourceAsStream(FONT_FILE));
             font = font.deriveFont(Font.PLAIN, fontSize);
             setFont(font);
         } catch (FontFormatException | IOException e) {
@@ -50,7 +51,8 @@ public class CustomButton extends JButton {
     
     public void setFontSize(float newSize) {
         fontSize = newSize;
-        _initFont();
+        font = font.deriveFont(fontSize);
+        setFont(font);
     }
 
     /*
