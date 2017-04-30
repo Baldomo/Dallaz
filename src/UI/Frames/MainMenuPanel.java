@@ -50,35 +50,40 @@ public class MainMenuPanel extends JPanel {
         }
 
         private void _initPanel() {
-            JButton btn1 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 1");
-            JButton btn2 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 2");
-            JButton btn3 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 3");
-            JButton btn4 = new CustomButton(root.getWidth()/6, root.getHeight()/9, "Prova 4");
+            CustomButton btn1 = new CustomButton(root.getWidth()/5, root.getHeight()/8, "Gioca");
+            CustomButton btn2 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Impostazioni");
+            CustomButton btn3 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Crediti");
+            CustomButton btn4 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Esci");
+            
+            btn2.setFontSize(26f);
+            btn3.setFontSize(30f);
 
             GroupLayout layout = new GroupLayout(this);
             this.setLayout(layout);
             layout.setAutoCreateGaps(true);
             layout.setAutoCreateContainerGaps(true);
-            layout.linkSize(SwingConstants.HORIZONTAL, btn1, btn2, btn3, btn4);
+            layout.linkSize(SwingConstants.HORIZONTAL, btn2, btn3, btn4);
+            layout.linkSize(SwingConstants.VERTICAL, btn2, btn3, btn4);
 
             layout.setVerticalGroup(
                     layout.createSequentialGroup()
-                            .addComponent(btn1)
+                            .addComponent(btn1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                            .addGap(root.getWidth()/20)
                             .addComponent(btn2)
                             .addComponent(btn3)
                             .addComponent(btn4)
             );
 
             layout.setHorizontalGroup(
-                    layout.createParallelGroup()
-                            .addComponent(btn1)
-                            .addComponent(btn2)
-                            .addComponent(btn3)
-                            .addComponent(btn4)
-
+                    layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                            .addComponent(btn1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup())
+                                .addComponent(btn2)
+                                .addComponent(btn3)
+                                .addComponent(btn4)
             );
             
-            this.setBorder(new EmptyBorder(new Insets(root.getHeight()/20, root.getWidth()/20, 0, 0)));
+            this.setBorder(new EmptyBorder(new Insets(root.getHeight()/18, root.getWidth()/20, 0, 0)));
         }
 
 }
