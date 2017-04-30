@@ -1,0 +1,17 @@
+{
+    "choices": [
+
+      {
+        "domanda": "Domanda 1",
+        "scelta1": "Scelta 1",
+        "scelta2": "Scelta 2"
+      },
+
+      {
+        "domanda": "Domanda 2",
+        "scelta1": "Altra scelta 1",
+        "scelta2": "Altra scelta 2"
+      }
+
+    ]
+}
