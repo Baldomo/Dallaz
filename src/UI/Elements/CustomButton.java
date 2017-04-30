@@ -21,7 +21,7 @@ public class CustomButton extends JButton {
     private static final String FONT_FILE = "Resources/Cutrims.otf";
     private static final Color DEFAULT_FONT_COLOR = Color.WHITE;
     private static final Color PRESSED_FONT_COLOR = Color.BLACK.brighter();
-    private static final float FONT_SIZE = 40f;
+    private float fontSize = 40f;
 
     public CustomButton(int larghezza, int altezza, @Nullable String testo) {
         super();
@@ -41,11 +41,16 @@ public class CustomButton extends JButton {
     private void _initFont() {
         try {
             Font font = Font.createFont(Font.TRUETYPE_FONT, getClass().getClassLoader().getResourceAsStream(FONT_FILE));
-            font = font.deriveFont(Font.PLAIN, FONT_SIZE);
+            font = font.deriveFont(Font.PLAIN, fontSize);
             setFont(font);
         } catch (FontFormatException | IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    public void setFontSize(float newSize) {
+        fontSize = newSize;
+        _initFont();
     }
 
     /*
