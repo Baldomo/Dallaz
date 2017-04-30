@@ -14,7 +14,8 @@ Ultimissima versione ***sviluppatore***: 8u152
 ### NetBeans IDE:
 Ultima versione: 8.2
     - [Windows](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-windows.exe)
-    - [Mac](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-macosx.dmg)
+    - [Mac](http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-javase-macosx.dmg)   
+    
 
 ## Windows:
 
@@ -27,7 +28,8 @@ Ultima versione: 8.2
 (Sia macOS che Linux hanno `git` preinstallato)
 
 1. Registrarsi su [BitBucket](bitbucket.org)
-1. Mandare la propria email al sommo capo
+1. Mandare la propria email al sommo capo   
+
 
 ## Generale:
 
@@ -41,7 +43,8 @@ Ultima versione: 8.2
 
     >Questo copia tutta la repo dai server di BitBucket sul vostro PC, creando
     >una cartella con il nome della repo (in questo caso "Dallaz") e mettendo tutto
-    >il contenuto dentro di essa
+    >il contenuto dentro di essa   
+    
 
 ------------------------
 
@@ -49,8 +52,8 @@ Ultima versione: 8.2
 1. *Ad ogni accesso*, inserire nel cmd il comando `git pull`
 
     >Questo aggiorna il codice salvato in locale rispetto a quello nella repo, scaricando
-    >le modifiche degli altri
-
+    >le modifiche degli altri   
+    
 
 1. *Dopo aver fatto delle modifiche*, inserire nel cmd il comando `git commit -m
     "Messaggio del commit"`, in "Messaggio del commit" deve contenere una piccola descrizione
@@ -62,12 +65,14 @@ Ultima versione: 8.2
     **Se un file prima non presente viene creato**, inserire prima il comando
         `git add -A`.
 
-    >Questo fa sapere alla repo che va aggiunto un file che prima non esisteva
+    >Questo fa sapere alla repo che va aggiunto un file che prima non esisteva   
+    
 
 1. Dopo aver svolto il `commit`, inserire il comando `git push`
 
     >Questo carica i file modificati/creati sulla repo online, permettendo poi
-    >agli altri di poter aggiornare i propri file locali
+    >agli altri di poter aggiornare i propri file locali   
+    
 
 
 ^_^
