@@ -13,11 +13,15 @@ public class Choice {
     private String domanda;
     private String scelta1;
     private String scelta2;
+    private int nextIndex1;
+    private int nextIndex2;
 
-    public Choice(String domanda, String scelta1, String scelta2) {
+    public Choice(String domanda, String scelta1, String scelta2, int nextIndex1, int nextIndex2) {
         this.domanda = domanda;
         this.scelta1 = scelta1;
         this.scelta2 = scelta2;
+        this.nextIndex1 = nextIndex1;
+        this.nextIndex2 = nextIndex2;
     }
 
     @Override
@@ -56,7 +60,9 @@ public class Choice {
             return new Choice(
                     jsonChoice.getString("domanda"),
                     jsonChoice.getString("scelta1"),
-                    jsonChoice.getString("scelta2")
+                    jsonChoice.getString("scelta2"),
+                    jsonChoice.getInt("nextIndex1"),
+                    jsonChoice.getInt("nextIndex2")
             );
         }
     }
