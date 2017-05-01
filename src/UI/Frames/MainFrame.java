@@ -12,6 +12,9 @@ public class MainFrame extends JFrame {
 
     private JFrame root = new JFrame();
 
+    private JPanel currentPanel = null;
+    private JPanel previousPanel;
+
     public MainFrame(@Nullable String title) {
         super();
 
@@ -27,6 +30,18 @@ public class MainFrame extends JFrame {
             root.setVisible(true);
         });
 
+    }
+
+    public void swapPanel(JPanel newPanel) {
+        previousPanel = currentPanel;
+        currentPanel = newPanel;
+
+        SwingUtilities.invokeLater(() -> {
+            root.remove(previousPanel);
+            root.add(currentPanel);
+            root.revalidate();
+            root.repaint();
+        });
     }
 
 }
