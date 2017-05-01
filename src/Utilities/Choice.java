@@ -13,8 +13,29 @@ public class Choice {
     private String domanda;
     private String scelta1;
     private String scelta2;
+
     private int nextIndex1;
     private int nextIndex2;
+
+    public String getDomanda() {
+        return domanda;
+    }
+
+    public String getScelta1() {
+        return scelta1;
+    }
+
+    public String getScelta2() {
+        return scelta2;
+    }
+
+    public int getNextIndex1() {
+        return nextIndex1;
+    }
+
+    public int getNextIndex2() {
+        return nextIndex2;
+    }
 
     public Choice(String domanda, String scelta1, String scelta2, int nextIndex1, int nextIndex2) {
         this.domanda = domanda;
