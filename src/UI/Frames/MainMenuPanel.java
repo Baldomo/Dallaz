@@ -21,6 +21,8 @@ public class MainMenuPanel extends JPanel {
     private static final String IMAGE_NAME = "/Resources/saloon.png";
 
     private JFrame root = null;
+    
+    public CustomButton btn1;
 
     public MainMenuPanel(@NotNull JFrame rootFrame) {
         super();
@@ -50,7 +52,7 @@ public class MainMenuPanel extends JPanel {
     }
 
     private void _initPanel() {
-        CustomButton btn1 = new CustomButton(root.getWidth()/5, root.getHeight()/8, "Gioca");
+        btn1 = new CustomButton(root.getWidth()/5, root.getHeight()/8, "Gioca");
         CustomButton btn2 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Impostazioni");
         CustomButton btn3 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Crediti");
         CustomButton btn4 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Esci");

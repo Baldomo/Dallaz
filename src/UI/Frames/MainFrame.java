@@ -1,6 +1,8 @@
 package UI.Frames;
 
 import com.sun.istack.internal.Nullable;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
@@ -14,6 +16,8 @@ public class MainFrame extends JFrame {
 
     private JPanel currentPanel = null;
     private JPanel previousPanel;
+    
+    private MainMenuPanel menu;
 
     public MainFrame(@Nullable String title) {
         super();
@@ -25,20 +29,23 @@ public class MainFrame extends JFrame {
             root.setLocationRelativeTo(null);
             root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-            root.add(new MainMenuPanel(root));
+            menu = new MainMenuPanel(root);
+            //root.add(menu);
+            StoryTextPanel prova = new StoryTextPanel(root, "Prooooooova");
+            root.add(prova);
 
             root.setVisible(true);
         });
+        
+        
 
     }
 
-    public void swapPanel(JPanel newPanel) {
-        previousPanel = currentPanel;
-        currentPanel = newPanel;
+    public void swapPanel(Object newPanel) {
 
         SwingUtilities.invokeLater(() -> {
-            root.remove(previousPanel);
-            root.add(currentPanel);
+            root.remove(currentPanel);
+            root.add((JPanel) newPanel);
             root.revalidate();
             root.repaint();
         });

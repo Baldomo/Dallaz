@@ -16,6 +16,9 @@ public class Choice {
 
     private int nextIndex1;
     private int nextIndex2;
+    
+    private String conseguenza1;
+    private String conseguenza2;
 
     public String getDomanda() {
         return domanda;
