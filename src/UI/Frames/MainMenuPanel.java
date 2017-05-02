@@ -60,6 +60,10 @@ public class MainMenuPanel extends JPanel {
         btn2.setFontSize(26f);
         btn3.setFontSize(30f);
 
+        btn4.addActionListener(e -> {
+            System.exit(0);
+        });
+
         GroupLayout layout = new GroupLayout(this);
         this.setLayout(layout);
         layout.setAutoCreateGaps(true);

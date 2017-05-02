@@ -15,7 +15,7 @@ public class CustomButton extends JButton {
     // Costanti dei vari colori del pulsante
     private static final Color DEFAULT_COLOR = new Color(0, 0, 0, 120);
     private static final Color PRESSED_COLOR = Color.WHITE;
-    private static final Color HOVER_COLOR = new Color(0, 0, 0, 180);
+    private static final Color HOVER_COLOR = new Color(0, 0, 0, 210);
 
     // Costanti del font del pulsante
     private static final String FONT_FILE = "Resources/Cutrims.otf";

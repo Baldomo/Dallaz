@@ -1,8 +1,6 @@
 package UI.Frames;
 
 import com.sun.istack.internal.Nullable;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
@@ -30,9 +28,13 @@ public class MainFrame extends JFrame {
             root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
             menu = new MainMenuPanel(root);
-            //root.add(menu);
-            StoryTextPanel prova = new StoryTextPanel(root, "Prooooooova");
-            root.add(prova);
+            currentPanel = menu;
+            root.add(currentPanel);
+            CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Prooooooova");
+
+            menu.btn1.addActionListener(e -> {
+                swapToTextPanel(prova);
+            });
 
             root.setVisible(true);
         });
@@ -41,13 +43,21 @@ public class MainFrame extends JFrame {
 
     }
 
-    public void swapPanel(Object newPanel) {
-
+    public void swapToChoicePanel(ChoicesPanel newPanel) {
         SwingUtilities.invokeLater(() -> {
-            root.remove(currentPanel);
-            root.add((JPanel) newPanel);
-            root.revalidate();
-            root.repaint();
+            root.getContentPane().removeAll();
+            root.getContentPane().invalidate();
+            root.getContentPane().add(newPanel);
+            root.getContentPane().revalidate();
+        });
+    }
+
+    private void swapToTextPanel(CustomTextPanel newPanel) {
+        SwingUtilities.invokeLater(() -> {
+            root.getContentPane().removeAll();
+            root.getContentPane().invalidate();
+            root.getContentPane().add(newPanel);
+            root.getContentPane().revalidate();
         });
     }
 
