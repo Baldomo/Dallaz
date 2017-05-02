@@ -1,21 +1,229 @@
 {
-    "choices": [
+  "choices": [
 
-      {
-        "domanda": "Domanda 1",
-        "scelta1": "Scelta 1",
-        "scelta2": "Scelta 2",
-        "nextIndex1": 1,
-        "nextIndex2": 2
-      },
+    {
+      "domanda": "Vuoi guardarti attorno?",
+      "scelta1": "Si",
+      "scelta2": "No",
+      "nextIndex1": 1,
+      "nextIndex2": 2
+    },
 
-      {
-        "domanda": "Domanda 2",
-        "scelta1": "Altra scelta 1",
-        "scelta2": "Altra scelta 2",
-        "nextIndex1": 3,
-        "nextIndex2": 4
-      }
+    {
+      "domanda": "Cosa vuoi rispondere alla ragazzina?",
+      "scelta1": "Si",
+      "scelta2": "No",
+      "nextIndex1": 3,
+      "nextIndex2": 4
+    },
 
-    ]
+    {
+      "domanda": "Potresti fermarti ad aiutare la ragazzina o proseguire la tua ricerca. Cosa vuoi fare ora?",
+      "scelta1": "La aiuti",
+      "scelta2": "Non dici nulla",
+      "nextIndex1": 5,
+      "nextIndex2": 6
+    },
+
+    {
+      "domanda": "Vuoi intervenire?",
+      "scelta1": "Fai scappare il lupo",
+      "scelta2": "È troppo pericoloso",
+      "nextIndex1": 7,
+      "nextIndex2": 8
+    },
+
+    {
+      "domanda": "Che direzione vuoi prendere?",
+      "scelta1": "Vai verso est",
+      "scelta2": "Vai verso ovest",
+      "nextIndex1": 9,
+      "nextIndex2": 10
+    },
+
+    {
+      "domanda": "Dove sei diretto?",
+      "scelta1": "Alla città più vicina",
+      "scelta2": "Non lo so",
+      "nextIndex1": 11,
+      "nextIndex2": 12
+    },
+
+    {
+      "domanda": "Cosa vuoi rispondere?",
+      "scelta1": "Passare la serata",
+      "scelta2": "Informazioni",
+      "nextIndex1": 13,
+      "nextIndex2": 14
+    },
+
+    {
+      "domanda": "Sembra che il denaro moderno con cui hai pagato non sia stato riconosciuto… cosa vuoi rispondere all’oste?",
+      "scelta1": "Soldi",
+      "scelta2": "Valuta asiatica",
+      "nextIndex1": 15,
+      "nextIndex2": 16
+    },
+
+    {
+      "domanda": "Vuoi accamparti per riposare o preferisci continuare la tua ricerca?",
+      "scelta1": "Ti accampi",
+      "scelta2": "Non ti accampi",
+      "nextIndex1": 17,
+      "nextIndex2": 18
+    },
+
+    {
+      "domanda": "Cosa vuoi fare?",
+      "scelta1": "Indaghi",
+      "scelta2": "Non indaghi e rimani seduto vicino al falò",
+      "nextIndex1": 19,
+      "nextIndex2": 20
+    },
+
+    {
+      "domanda": "Cosa vuoi fare?",
+      "scelta1": "Cambi strada",
+      "scelta2": "Scappi",
+      "nextIndex1": 21,
+      "nextIndex2": 22
+    },
+
+    {
+      "domanda": "Ora che hai un’arma cosa vuoi fare?",
+      "scelta1": "Cerchi un corso d'acqua",
+      "scelta2": "Rimani nel bosco ",
+      "nextIndex1": 23,
+      "nextIndex2": 24
+    },
+
+    {
+      "domanda": "Come vuoi agire di fronte a questa minaccia?",
+      "scelta1": "Scappi",
+      "scelta2": "Lo affronti",
+      "nextIndex1": 25,
+      "nextIndex2": 26
+    },
+
+    {
+      "domanda": "Dovresti controllare dove si trova l’orso ma sei ferito..cosa vuoi fare prima?",
+      "scelta1": "Ti medichi",
+      "scelta2": "Torni al fiume",
+      "nextIndex1": 27,
+      "nextIndex2": 28
+    },
+
+    {
+      "domanda": "Ora che hai del cibo cosa vuoi farne?",
+      "scelta1": "Lo cucini",
+      "scelta2": "Lo mangi crudo",
+      "nextIndex1": 29,
+      "nextIndex2": 30
+    },
+
+    {
+      "domanda": "Sembra pericoloso…come vuoi affrontare il cinghiale?",
+      "scelta1": "Ti arrampichi su un albero",
+      "scelta2": "Lo uccidi",
+      "nextIndex1": 31,
+      "nextIndex2": 32
+    },
+
+    {
+      "domanda": "Potrebbe essere rischioso rimanerci vicino ma si potrebbe sfruttare…cosa vuoi fare?",
+      "scelta1": "Fai cadere l'alveare",
+      "scelta2": "Torni giù",
+      "nextIndex1": 33,
+      "nextIndex2": 34
+    },
+
+    {
+      "domanda": "Vuoi uccidere il cinghiale?",
+      "scelta1": "Lo uccidi",
+      "scelta2": "Lo risparmi",
+      "nextIndex1": 35,
+      "nextIndex2": 36
+    },
+
+    {
+      "domanda": "Ora che hai del cibo cosa vuoi farne?",
+      "scelta1": "Lo cucini",
+      "scelta2": "Lo mangi crudo",
+      "nextIndex1": 37,
+      "nextIndex2": 38
+    },
+
+    {
+      "domanda": "Cosa vuoi fare?",
+      "scelta1": "Fuggi",
+      "scelta2": "Ti consegni",
+      "nextIndex1": 39,
+      "nextIndex2": 40
+    },
+
+    {
+      "domanda": "Cosa vuoi dire al comandante?",
+      "scelta1": "Liberatemi",
+      "scelta2": "Non potete capire",
+      "nextIndex1": 41,
+      "nextIndex2": 42
+    },
+
+    {
+      "domanda": "Cosa vuoi rispondere?",
+      "scelta1": "Da dove venite voi",
+      "scelta2": "Non lo so",
+      "nextIndex1": 43,
+      "nextIndex2": 44
+    },
+
+    {
+      "domanda": "Fuori la battaglia sta continuando, è la tua occasione per metterti al sicuro, però non dimenticare la ragione del tuo viaggio! Cosa vuoi fare?",
+      "scelta1": "Scappi",
+      "scelta2": "Rimani nella tenda",
+      "nextIndex1": 45,
+      "nextIndex2": 46
+    },
+
+    {
+      "domanda": "Ora sei armato: puoi difenderti o attaccare. Cosa vuoi fare?",
+      "scelta1": "Rimani nascosto",
+      "scelta2": "Attacchi",
+      "nextIndex1": 47,
+      "nextIndex2": 48
+    },
+
+    {
+      "domanda": "Ora è tutto calmo, il capitano dorme e il DalSZ è a portata di mano. Cosa vuoi fare?",
+      "scelta1": "Prendi il DalSZ",
+      "scelta2": "Uccidi il capitano",
+      "nextIndex1": 49,
+      "nextIndex2": 50
+    },
+
+    {
+      "domanda": "È giunto il momento decisivo. Come vuoi comportarti con il capitano?",
+      "scelta1": "Gli spari",
+      "scelta2": "Ti allei",
+      "nextIndex1": 51,
+      "nextIndex2": 52
+    },
+
+    {
+      "domanda": "Cosa vuoi rispondere al capitano?",
+      "scelta1": "Sono qui per aiutarti",
+      "scelta2": "Non ti voglio fare del male",
+      "nextIndex1": 53,
+      "nextIndex2": 54
+    },
+
+    {
+      "domanda": "Il momento è delicato...cosa puoi dire per ottenere la fiducia del capitano?",
+      "scelta1": "Stringiamo un patto",
+      "scelta2": "Ti posso curare",
+      "nextIndex1": 55,
+      "nextIndex2": 56
+    }
+
+  ]
 }
