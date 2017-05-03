@@ -26,6 +26,8 @@ public class MainFrame extends JFrame {
             root.setSize(1280, 720);
             root.setLocationRelativeTo(null);
             root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            root.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            root.setUndecorated(true);
 
             menu = new MainMenuPanel(root);
             currentPanel = menu;
