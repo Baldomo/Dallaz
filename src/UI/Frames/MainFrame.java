@@ -1,5 +1,7 @@
 package UI.Frames;
 
+import GruppoGUI.FinestraDomanda;
+import Utilities.StoryNode;
 import com.sun.istack.internal.Nullable;
 
 import javax.swing.*;
@@ -42,7 +44,7 @@ public class MainFrame {
 
     }
 
-    public void swapToChoicePanel(ChoicesPanel newPanel) {
+    public void swapToChoicePanel(FinestraDomanda newPanel) {
         SwingUtilities.invokeLater(() -> {
             root.getContentPane().removeAll();
             root.getContentPane().invalidate();
@@ -61,7 +63,24 @@ public class MainFrame {
     }
 
 
-    public static class StoryManager {
+    public class StoryManager {
+
+        private StoryNode currentStoryNode;
+
+        public void loadNextDomanda(StoryNode storyNode, int scelta) {
+
+        }
+
+        public CustomTextPanel loadNextStory(StoryNode storyNode, int scelta) {
+            if (scelta == 1) {
+                currentStoryNode = storyNode.getNextStoryNode(scelta);
+                return new CustomTextPanel(root, root.getWidth(), root.getHeight(), currentStoryNode.getDomanda());
+            } else if (scelta == 2) {
+                currentStoryNode = storyNode.getNextStoryNode(scelta);
+                return new CustomTextPanel(root, root.getWidth(), root.getHeight(), currentStoryNode.getDomanda());
+            }
+            return null;
+        }
 
     }
 }

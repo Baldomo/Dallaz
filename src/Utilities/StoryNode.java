@@ -68,7 +68,7 @@ public class StoryNode {
      * La classe interna Json (è anche statica!) serve a ottenere singoli oggetti da story.json
      * e convertirli in oggetti StoryNode, contenenti la domanda e le due scelte sotto forma di stringhe.
      */
-    public static class Json {
+    public class Json {
 
         private static final String JSON_FILE = "/Resources/story.json";
         private JSONTokener tokener = null;
