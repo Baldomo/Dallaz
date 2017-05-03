@@ -18,7 +18,7 @@ import java.io.IOException;
 public class MainMenuPanel extends JPanel {
 
     private static Image BACKGROUND_IMAGE = null;
-    private static final String IMAGE_NAME = "/Resources/background.jpg";
+    private static final String IMAGE_NAME = "/Resources/saloon.png";
 
     private JFrame root = null;
     
@@ -58,6 +58,7 @@ public class MainMenuPanel extends JPanel {
         CustomButton btn4 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Esci");
 
         btn2.setFontSize(26f);
+
         btn3.setFontSize(30f);
 
         btn4.addActionListener(e -> {

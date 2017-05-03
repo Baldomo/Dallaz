@@ -18,16 +18,11 @@ public class CustomTextPanel extends JPanel {
 
     private static final Color OVERLAY_COLOR = new Color(0, 0, 0, 120);
 
-    private JLabel testoh = new JLabel() {
-        @Override
-        protected void paintComponent(Graphics g) {
-            g.setColor(new Color(0, 0, 0, 0));
-            super.paintComponent(g);
-        }
-    };
+    private JTextArea testoh = new JTextArea();
     private JFrame root;
+    private EmptyBorder border = null;
 
-    private static final String FONT_FILE = "Resources/digital.ttf";
+    private static final String FONT_FILE = "Resources/Cutrims.otf";
     private Color FONT_COLOR = Color.WHITE;
     private float fontSize = 36f;
     private Font font;
@@ -39,13 +34,16 @@ public class CustomTextPanel extends JPanel {
         super();
         root = rootFrame;
 
-        _initTesto(testo);
         try {
             BACKGROUND_IMAGE = ImageIO.read(getClass().getResource(IMAGE_NAME));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        this.setBorder(new EmptyBorder(new Insets(this.getHeight()/6, this.getWidth()/7, 0, this.getWidth()/7)));
+
+        border = new EmptyBorder(new Insets(root.getHeight()/6, root.getWidth()/7, 0, root.getWidth()/7));
+        this.setBorder(border);
+        this.setLayout(new BorderLayout());
+        _initTesto(testo);
 
         setMinimumSize(new Dimension(larghezza, altezza));
     }
@@ -53,8 +51,12 @@ public class CustomTextPanel extends JPanel {
     private void _initTesto(String testo) {
         testoh.setText(testo);
         testoh.setForeground(FONT_COLOR);
+
+        testoh.setEditable(false);
+        testoh.setLineWrap(true);
         testoh.setOpaque(false);
-        add(testoh);
+        testoh.setAlignmentX(SwingConstants.LEFT);
+        add(testoh, BorderLayout.CENTER);
 
         try {
             font = Font.createFont(Font.TRUETYPE_FONT, getClass().getClassLoader().getResourceAsStream(FONT_FILE));

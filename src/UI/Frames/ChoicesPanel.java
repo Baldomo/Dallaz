@@ -1,11 +1,11 @@
 package UI.Frames;
 
 import UI.Elements.CustomButton;
-import Utilities.Choice;
+import Utilities.StoryNode;
 import com.sun.istack.internal.NotNull;
-import java.awt.Color;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by Leonardo Baldin on 29/04/17.
@@ -13,21 +13,21 @@ import javax.swing.*;
 
 public class ChoicesPanel extends JPanel {
     
-    private Choice choice;
+    private StoryNode storyNode;
 
-    public ChoicesPanel(@NotNull JFrame rootFrame, Choice choice) {
+    public ChoicesPanel(@NotNull JFrame rootFrame, StoryNode storyNode) {
         super();
-        this.choice = choice;
+        this.storyNode = storyNode;
     }
 
     private void _initText() {
-        JLabel testoh = new JLabel(choice.getDomanda());
+        JLabel testoh = new JLabel(storyNode.getDomanda());
         testoh.setBackground(new Color(0, 0, 0, 175));
     }
 
     private void _initButtons() {
-        CustomButton btn1 = new CustomButton(0, 0, choice.getScelta1());
-        CustomButton btn2 = new CustomButton(0, 0, choice.getScelta2());
+        CustomButton btn1 = new CustomButton(0, 0, storyNode.getScelta1());
+        CustomButton btn2 = new CustomButton(0, 0, storyNode.getScelta2());
     }
 
 }
