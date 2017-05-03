@@ -32,7 +32,7 @@ public class MainFrame extends JFrame {
             menu = new MainMenuPanel(root);
             currentPanel = menu;
             root.add(currentPanel);
-            CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Prooooooova");
+            CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Provaaaaa");
 
             menu.btn1.addActionListener(e -> {
                 swapToTextPanel(prova);

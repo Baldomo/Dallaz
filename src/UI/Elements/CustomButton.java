@@ -18,10 +18,10 @@ public class CustomButton extends JButton {
     private static final Color HOVER_COLOR = new Color(0, 0, 0, 210);
 
     // Costanti del font del pulsante
-    private static final String FONT_FILE = "Resources/Cutrims.otf";
+    private static final String FONT_FILE = "Resources/digital.ttf";
     private static final Color DEFAULT_FONT_COLOR = Color.WHITE;
     private static final Color PRESSED_FONT_COLOR = Color.BLACK.brighter();
-    private float fontSize = 40f;
+    private float fontSize = 50f;
     private Font font;
 
     public CustomButton(int larghezza, int altezza, @Nullable String testo) {

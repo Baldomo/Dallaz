@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GruppoGUI;
+package startermenu;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
  *
  * @author marco
  */
-public class MenuIniziale extends JFrame implements ActionListener{
+public class MenuIniziale extends JPanel implements ActionListener{
    
     ImageIcon backWall = new ImageIcon("img/far2.jpeg");
     ImageIcon logo = new ImageIcon("img/logo Dalla small.png");
@@ -25,13 +25,12 @@ public class MenuIniziale extends JFrame implements ActionListener{
     JLabel title2 = new JLabel("UR WAY");*/
     ImageIcon title = new ImageIcon("img/titolo sml.png");
     JLabel titlep= new JLabel(title);
-    JButton startButton = new JButton(start);
+    CustomButton startButton = new CustomButton(134,41,"Gioca");
     JLabel background = new JLabel(backWall);
     JLabel background2 = new JLabel(video);
     JLabel logop = new JLabel(logo);
     
 public MenuIniziale(){
-    super("CHOOSE YOUR WAY");
     
     setLayout(new BorderLayout());
     add(background);
@@ -48,15 +47,11 @@ public MenuIniziale(){
     background.add(titlep);
     titlep.setBounds(74, 88, 855, 197);
     background.add(startButton);
-    startButton.setBounds(493,550, 134, 41);
-   
+    startButton.setBounds(485,541, 150, 50);
+    setVisible(true);
     startButton.addActionListener(this);
     
-    setSize(1220, 700); 
-    setLocation(600,200);
-    setResizable(false);
-    setVisible(true);
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
     
 }
 

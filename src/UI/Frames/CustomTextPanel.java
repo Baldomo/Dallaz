@@ -27,7 +27,7 @@ public class CustomTextPanel extends JPanel {
     };
     private JFrame root;
 
-    private static final String FONT_FILE = "Resources/Cutrims.otf";
+    private static final String FONT_FILE = "Resources/digital.ttf";
     private Color FONT_COLOR = Color.WHITE;
     private float fontSize = 36f;
     private Font font;
