@@ -64,6 +64,34 @@ public class StoryNode {
     }
 
 
+    public StoryNode getNextStoryNode(int scelta) {
+        JSONObject jsonChoice = null;
+        if (scelta == 1) {
+            jsonChoice = new Json().getChoices().getJSONObject(getNextIndex1());
+        } else if (scelta == 2) {
+            jsonChoice = new Json().getChoices().getJSONObject(getNextIndex2());
+        } else throw new IndexOutOfBoundsException("int scelta non è né 1 né 2!");
+
+        return new StoryNode(
+                jsonChoice.getString("domanda"),
+                jsonChoice.getString("scelta1"),
+                jsonChoice.getString("scelta2"),
+                jsonChoice.getInt("nextIndex1"),
+                jsonChoice.getInt("nextIndex2"),
+                jsonChoice.getInt("storyIndex1"),
+                jsonChoice.getInt("storyIndex2")
+        );
+    }
+
+    public String getNextStoryText(int scelta) {
+        if (scelta == 1) {
+            return new Json().getStories().getString(getNextIndex1());
+        } else if (scelta == 2) {
+            return new Json().getStories().getString(getNextIndex2());
+        } else throw new IndexOutOfBoundsException("int scelta non è né 1 né 2!");
+
+    }
+
     /**
      * La classe interna Json (è anche statica!) serve a ottenere singoli oggetti da story.json
      * e convertirli in oggetti StoryNode, contenenti la domanda e le due scelte sotto forma di stringhe.

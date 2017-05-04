@@ -67,19 +67,17 @@ public class MainFrame {
 
         private StoryNode currentStoryNode;
 
-        public void loadNextDomanda(StoryNode storyNode, int scelta) {
-
+        public FinestraDomanda loadNextDomanda(StoryNode storyNode, int scelta) {
+            currentStoryNode = storyNode.getNextStoryNode(scelta);
+            return new FinestraDomanda(currentStoryNode);
         }
 
         public CustomTextPanel loadNextStory(StoryNode storyNode, int scelta) {
-            if (scelta == 1) {
-                currentStoryNode = storyNode.getNextStoryNode(scelta);
-                return new CustomTextPanel(root, root.getWidth(), root.getHeight(), currentStoryNode.getDomanda());
-            } else if (scelta == 2) {
-                currentStoryNode = storyNode.getNextStoryNode(scelta);
-                return new CustomTextPanel(root, root.getWidth(), root.getHeight(), currentStoryNode.getDomanda());
-            }
-            return null;
+            return new CustomTextPanel(root, root.getWidth(), root.getHeight(), currentStoryNode.getNextStoryText(scelta));
+        }
+
+        public StoryNode getCurrentStoryNode() {
+            return currentStoryNode;
         }
 
     }
