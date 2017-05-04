@@ -82,14 +82,14 @@ public class FinestraDomanda extends JPanel implements ActionListener {
 
     private void _initFont() {
         try {
-            stampact = Font.createFont(Font.TRUETYPE_FONT, new File("src/font/STAMPACT.TTF")).deriveFont(30f);
+            stampact = Font.createFont(Font.TRUETYPE_FONT, new File("src/Resources/STAMPACT.TTF")).deriveFont(30f);
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             ge.registerFont(stampact);
         } catch (IOException | FontFormatException e) {
             e.printStackTrace();
         }
         try {
-            goldenage = Font.createFont(Font.TRUETYPE_FONT, new File("src/font/Golden Age Regular.ttf")).deriveFont(25f);
+            goldenage = Font.createFont(Font.TRUETYPE_FONT, new File("src/Resources/Golden Age Regular.ttf")).deriveFont(25f);
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             ge.registerFont(goldenage);
         } catch (IOException | FontFormatException e) {

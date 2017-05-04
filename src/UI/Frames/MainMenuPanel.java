@@ -12,7 +12,6 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
@@ -31,12 +30,21 @@ public class MainMenuPanel extends JPanel {
     
     public CustomButton btn1;
 
+    private Polygon side = new Polygon();
+
     public MainMenuPanel(@NotNull JFrame rootFrame) throws IOException {
         super();
         this.root = rootFrame;
 
+        setOpaque(false);
+        side.addPoint(0, 0);
+        side.addPoint(root.getWidth() /5, 0);
+        side.addPoint(root.getWidth() /7, root.getHeight());
+        side.addPoint(0, root.getHeight());
+
         try {
             BACKGROUND_IMAGE = ImageIO.read(getClass().getResource(IMAGE_NAME));
+            BACKGROUND_IMAGE = ImageResizer.resizeImage(BACKGROUND_IMAGE, root.getWidth(), root.getHeight(), true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -45,17 +53,11 @@ public class MainMenuPanel extends JPanel {
     }
 
     @Override
-    protected void paintComponent(Graphics g) {
-        Polygon side = new Polygon();
-        side.addPoint(0, 0);
-        side.addPoint(root.getWidth() /5, 0);
-        side.addPoint(root.getWidth() /7, root.getHeight());
-        side.addPoint(0, root.getHeight());
-
-        g.drawImage(ImageResizer.resizeImage(BACKGROUND_IMAGE, root.getWidth(), root.getHeight(), true), 0, 0, null);
+    public void paint(Graphics g) {
+        g.drawImage(BACKGROUND_IMAGE, 0, 0, null);
         g.setColor(new Color(0, 0, 0, 175));
-        setBackground(Color.YELLOW);
         g.fillPolygon(side);
+        super.paint(g);
     }
 
     private void _initPanel() throws IOException {
@@ -100,7 +102,7 @@ public class MainMenuPanel extends JPanel {
         this.setBorder(new EmptyBorder(new Insets(root.getHeight()/18, root.getWidth()/20, 0, 0)));
     }
 
-    public void musicStart() throws FileNotFoundException, IOException{
+    public void musicStart() {
         try {
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/Resources/mainMenuSong.wav").getAbsoluteFile());
             Clip clip = AudioSystem.getClip();

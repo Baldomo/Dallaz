@@ -5,6 +5,7 @@ import java.awt.*;
 /**
  * Created by Leonardo Baldin on 28/04/17.
  */
+
 public class ImageResizer {
 
     public static Image resizeImage(Image image, int width, int height, boolean max) {

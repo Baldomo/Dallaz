@@ -28,8 +28,8 @@ public class MainFrame {
             root.setSize(1280, 720);
             root.setLocationRelativeTo(null);
             root.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-            root.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            root.setUndecorated(true);
+            //root.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            //root.setUndecorated(true);
 
             try {
                 menu = new MainMenuPanel(root);
@@ -38,12 +38,13 @@ public class MainFrame {
             }
             currentPanel = menu;
             root.add(currentPanel);
-            //CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lacus at mauris vehicula blandit. Cras sapien lectus, congue in sollicitudin mattis, lacinia quis ex. Nam eu justo porttitor, dapibus eros id, ornare leo. Quisque at sodales ex. Ut sollicitudin nisi vitae dolor congue laoreet. Integer elementum justo nec sapien malesuada, ut posuere neque lacinia. Cras ut mi at ligula venenatis semper. Aenean id suscipit purus, facilisis semper arcu. Nunc tincidunt lorem bibendum ipsum eleifend condimentum. Sed iaculis maximus quam, id pellentesque dui feugiat at. ");
+            CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lacus at mauris vehicula blandit. Cras sapien lectus, congue in sollicitudin mattis, lacinia quis ex. Nam eu justo porttitor, dapibus eros id, ornare leo. Quisque at sodales ex. Ut sollicitudin nisi vitae dolor congue laoreet. Integer elementum justo nec sapien malesuada, ut posuere neque lacinia. Cras ut mi at ligula venenatis semper. Aenean id suscipit purus, facilisis semper arcu. Nunc tincidunt lorem bibendum ipsum eleifend condimentum. Sed iaculis maximus quam, id pellentesque dui feugiat at. ");
             FinestraDomanda fd = new FinestraDomanda();
 
             menu.btn1.addActionListener(e -> {
                 menu.stopMusic();
-                swapToChoicePanel(fd);
+                //swapToChoicePanel(fd);
+                swapToTextPanel(prova);
             });
 
             root.setVisible(true);

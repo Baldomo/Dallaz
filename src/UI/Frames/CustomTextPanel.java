@@ -74,7 +74,7 @@ public class CustomTextPanel extends JPanel {
 
     private void _animateText(String testo) {
         testoh.setText(null);
-        Timer timer = new Timer(10, actionEvent -> {
+        Timer timer = new Timer(50, actionEvent -> {
             if (charCounter < testo.length()) {
                 testoh.append(Character.toString(testo.charAt(charCounter)));
                 charCounter++;
@@ -90,6 +90,7 @@ public class CustomTextPanel extends JPanel {
         IMAGE_NAME = path;
         try {
             BACKGROUND_IMAGE = ImageIO.read(getClass().getResource(IMAGE_NAME));
+            BACKGROUND_IMAGE = ImageResizer.resizeImage(BACKGROUND_IMAGE, root.getWidth(), root.getHeight(), true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -114,13 +115,13 @@ public class CustomTextPanel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
         Polygon fill = new Polygon();
         fill.addPoint(getX(), getY());
         fill.addPoint(this.getWidth(), getY());
         fill.addPoint(this.getWidth(), this.getHeight());
         fill.addPoint(getX(), this.getHeight());
-
-        g.drawImage(ImageResizer.resizeImage(BACKGROUND_IMAGE, root.getWidth(), root.getHeight(), true), 0, 0, null);
+        g.drawImage(BACKGROUND_IMAGE, 0, 0, null);
         g.setColor(OVERLAY_COLOR);
         g.fillPolygon(fill);
     }
