@@ -61,7 +61,7 @@
       "storyIndex2": 0
     },
 
-    { /6
+    { //6
       "domanda": "Cosa vuoi rispondere?",
       "scelta1": "Passare la serata",
       "scelta2": "Informazioni",
@@ -284,7 +284,7 @@
 //0
     "La scienza ha fatto progressi che dieci anni fa erano inimmaginabili: nuove tecnologie, innovazioni in ambito medico… e ora un uomo qualunque, un ingegnere come altri, nel suo garage, dopo infiniti tentativi, ha dato vita a qualcosa di impensabile anche in questo tempo, aprendo una nuova frontiera per il genere umano: una macchina del tempo! \n Cosa fare? Se si venisse a sapere in giro, lo Stato sequestrerebbe il macchinario… no il nostro pioniere del tempo intende tenere per sé la sua invenzione, almeno fino a che non l’avrà provata. \n Parte per il suo primo viaggio: una cosa veloce in un luogo isolato, in modo da non modificare il corso del tempo tramite contatti indesiderati. Tornato con successo decide di riprovare, così il 14 agosto 2026 parte per un secondo viaggio con destinazione Treviso un anno dopo. Ma il nostro pioniere non è così fortunato come la prima volta… \n Riaperti gli occhi gli si mostra un paesaggio totalmente diverso da quello che si aspettava: un paesaggio rigoglioso e lussureggiante, un paradiso...che può trasformarsi in un inferno. Voltandosi vede che la macchina è in corto circuito e, cosa più drammatica, non ricorda più chi è o perché è lì. L’unica cosa che ricorda è un componente del macchinario, piccolo ma estremamente importante, chiamato DalSZ, che ora non è al suo posto: deve ritrovarlo ma non ricorda il perché.",
 //1
-    "Ci sono delle tracce sul terreno, sembrano zoccoli… forse una persona a cavallo ha preso il mio DalSZ"
+    "Ci sono delle tracce sul terreno, sembrano zoccoli… forse una persona a cavallo ha preso il mio DalSZ",
 //2
     "Un suono acuto e intermittente viene dalle sue spalle… <<Il rilevatore!>> il DalSZ infatti era stato progettato per segnalare la sua posizione sul rilevatore, come precauzione. <<Ok, adesso lo potrò ritrovare. Ma perché lo devo ritrovare? Non lo ricordo ma so che lo devo fare, sembra l’unica cosa con un po’ di senso in tutto questo>>. Raccolto lo strumento l’uomo si mette in viaggio seguendo la direzione che gli viene indicata…",
 
@@ -292,8 +292,7 @@
     "Lungo il cammino non incontra nessuno tranne un cagnolino; poi, dopo circa tre ore dalla partenza, il nostro pioniere trova una ragazzina a fianco ad un albero che cerca qualcosa: non sembra spaventata da lui, così le chiede che cosa stia cercando e lei risponde: <<Il mio cagnolino, lo hai visto per caso?>>.",
 
 //4
-    "<<Sì, ne ho visto uno prima, probabilmente è lui>>. Gli occhi della ragazzina si
-illuminano pieni di gratitudine."
+    "<<Sì, ne ho visto uno prima, probabilmente è lui>>. Gli occhi della ragazzina si illuminano pieni di gratitudine.",
 
 //5
     "Lei accetta così i due si mettono in viaggio. Finalmente trovano il cagnolino, ma un lupo lo sta attaccando.",
@@ -377,6 +376,6 @@ illuminano pieni di gratitudine."
     "Tornato al fiume si rende conto che l’orso se n’è andato ma le fitte che derivavano dalla ferita lo fanno barcollare. In quel momento vede che Bobby sta attirando la sua attenzione verso un ciuffo di erbe particolari, erbe che conosce per le loro proprietà medicinali: sono in grado di lenire le ferite e le scottature. Dopo averle strette attorno alla gamba si rialza e il dolore passa in breve tempo permettendogli di pescare.",
 
 //
-    "Non facendosi intimorire, il nostro pioniere si avvicina all’animale e prende l’arma con l’intento di usarla come se fosse una lancia. Ma pochi attimi prima di attaccare, il suo fido amico gli ringhia contro come a volergli suggerire di non iniziare uno scontro: “in effetti c’è abbastanza pesce per tutti, non occorre fare del male al povero orso” riflette. Così segue per un po’ la riva del fiume allontanandosi e lasciando l’animale alla sua caccia.",
+    "Non facendosi intimorire, il nostro pioniere si avvicina all’animale e prende l’arma con l’intento di usarla come se fosse una lancia. Ma pochi attimi prima di attaccare, il suo fido amico gli ringhia contro come a volergli suggerire di non iniziare uno scontro: “in effetti c’è abbastanza pesce per tutti, non occorre fare del male al povero orso” riflette. Così segue per un po’ la riva del fiume allontanandosi e lasciando l’animale alla sua caccia."
   ]
 }

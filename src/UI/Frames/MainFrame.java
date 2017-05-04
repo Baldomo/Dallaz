@@ -38,11 +38,12 @@ public class MainFrame {
             }
             currentPanel = menu;
             root.add(currentPanel);
-            CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lacus at mauris vehicula blandit. Cras sapien lectus, congue in sollicitudin mattis, lacinia quis ex. Nam eu justo porttitor, dapibus eros id, ornare leo. Quisque at sodales ex. Ut sollicitudin nisi vitae dolor congue laoreet. Integer elementum justo nec sapien malesuada, ut posuere neque lacinia. Cras ut mi at ligula venenatis semper. Aenean id suscipit purus, facilisis semper arcu. Nunc tincidunt lorem bibendum ipsum eleifend condimentum. Sed iaculis maximus quam, id pellentesque dui feugiat at. ");
+            //CustomTextPanel prova = new CustomTextPanel(root, root.getWidth(), root.getHeight(), "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis lacus at mauris vehicula blandit. Cras sapien lectus, congue in sollicitudin mattis, lacinia quis ex. Nam eu justo porttitor, dapibus eros id, ornare leo. Quisque at sodales ex. Ut sollicitudin nisi vitae dolor congue laoreet. Integer elementum justo nec sapien malesuada, ut posuere neque lacinia. Cras ut mi at ligula venenatis semper. Aenean id suscipit purus, facilisis semper arcu. Nunc tincidunt lorem bibendum ipsum eleifend condimentum. Sed iaculis maximus quam, id pellentesque dui feugiat at. ");
+            FinestraDomanda fd = new FinestraDomanda();
 
             menu.btn1.addActionListener(e -> {
                 menu.stopMusic();
-                swapToTextPanel(prova);
+                swapToChoicePanel(fd);
             });
 
             root.setVisible(true);
