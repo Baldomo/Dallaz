@@ -16,6 +16,8 @@ import java.io.IOException;
 
 public class CustomTextPanel extends JPanel {
 
+    private int charCounter = 0;
+
     private static final Color OVERLAY_COLOR = new Color(0, 0, 0, 120);
 
     private JTextArea testoh = new JTextArea();
@@ -49,11 +51,14 @@ public class CustomTextPanel extends JPanel {
     }
 
     private void _initTesto(String testo) {
-        testoh.setText(testo);
+        //testoh.setText(testo);
+        _animateText(testo);
         testoh.setForeground(FONT_COLOR);
 
         testoh.setEditable(false);
+        testoh.getCaret().deinstall(testoh);
         testoh.setLineWrap(true);
+        testoh.setWrapStyleWord(true);
         testoh.setOpaque(false);
         testoh.setAlignmentX(SwingConstants.LEFT);
         add(testoh, BorderLayout.CENTER);
@@ -65,6 +70,20 @@ public class CustomTextPanel extends JPanel {
         } catch (FontFormatException | IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void _animateText(String testo) {
+        testoh.setText(null);
+        Timer timer = new Timer(10, actionEvent -> {
+            if (charCounter < testo.length()) {
+                testoh.append(Character.toString(testo.charAt(charCounter)));
+                charCounter++;
+            } else {
+                ((Timer) actionEvent.getSource()).stop();
+            }
+        });
+        timer.start();
+        charCounter = 0;
     }
 
     public void setBackgroundImage(String path) {
