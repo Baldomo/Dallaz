@@ -51,7 +51,7 @@ public class FinestraDomanda extends JPanel implements ActionListener {
         background.add(domanda);
         domanda.setEditable(false);
         domanda.setBounds(74, 120, 972, 280);
-       
+
         /*ris1.setIcon(b1);
         ris1.setHorizontalTextPosition(JButton.CENTER);
         ris1.setVerticalTextPosition(JButton.CENTER);
@@ -59,8 +59,8 @@ public class FinestraDomanda extends JPanel implements ActionListener {
         ris1.setForeground(new Color(58,32,16));*/
         background.add(ris1);
         ris1.setBounds(74, 450, 300, 100);
-       
-       
+
+
         /*ris2.setIcon(b1);
         ris2.setHorizontalTextPosition(JButton.CENTER);
         ris2.setVerticalTextPosition(JButton.CENTER);
@@ -120,5 +120,4 @@ public class FinestraDomanda extends JPanel implements ActionListener {
         }
 
     }
-
 }

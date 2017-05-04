@@ -5,9 +5,14 @@ import Utilities.ImageResizer;
 import com.sun.istack.internal.NotNull;
 
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
@@ -21,10 +26,12 @@ public class MainMenuPanel extends JPanel {
     private static final String IMAGE_NAME = "/Resources/saloon.png";
 
     private JFrame root = null;
+
+    private Clip mainMenuMusic;
     
     public CustomButton btn1;
 
-    public MainMenuPanel(@NotNull JFrame rootFrame) {
+    public MainMenuPanel(@NotNull JFrame rootFrame) throws IOException {
         super();
         this.root = rootFrame;
 
@@ -51,11 +58,13 @@ public class MainMenuPanel extends JPanel {
         g.fillPolygon(side);
     }
 
-    private void _initPanel() {
+    private void _initPanel() throws IOException {
         btn1 = new CustomButton(root.getWidth()/5, root.getHeight()/8, "Gioca");
         CustomButton btn2 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Impostazioni");
         CustomButton btn3 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Crediti");
         CustomButton btn4 = new CustomButton(root.getWidth()/6, root.getHeight()/11, "Esci");
+
+        musicStart();
 
         btn2.setFontSize(26f);
 
@@ -93,4 +102,20 @@ public class MainMenuPanel extends JPanel {
         this.setBorder(new EmptyBorder(new Insets(root.getHeight()/18, root.getWidth()/20, 0, 0)));
     }
 
+    public void musicStart() throws FileNotFoundException, IOException{
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/Resources/mainMenuSong.wav").getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            clip.start();
+            clip.loop(6);
+            mainMenuMusic = clip;
+        } catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+        }
+    }
+
+    public void stopMusic(){
+        mainMenuMusic.stop();
+    }
 }
