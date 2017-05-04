@@ -1,7 +1,7 @@
 {
   "choices": [
 
-    { //0
+    {
       "domanda": "Vuoi guardarti attorno?",
       "scelta1": "Si",
       "scelta2": "No",
@@ -11,7 +11,7 @@
       "storyIndex2": 0
     },
 
-    { //1
+    {
       "domanda": "Cosa vuoi rispondere alla ragazzina?",
       "scelta1": "Si",
       "scelta2": "No",
@@ -21,7 +21,7 @@
       "storyIndex2": 10
     },
 
-    { //2
+    {
       "domanda": "Potresti fermarti ad aiutare la ragazzina o proseguire la tua ricerca. Cosa vuoi fare ora?",
       "scelta1": "La aiuti",
       "scelta2": "Non dici nulla",
@@ -31,7 +31,7 @@
       "storyIndex2": 10
     },
 
-    { //3
+    {
       "domanda": "Vuoi intervenire?",
       "scelta1": "Fai scappare il lupo",
       "scelta2": "È troppo pericoloso",
@@ -41,7 +41,7 @@
       "storyIndex2": 0
     },
 
-    { //4
+    {
       "domanda": "Che direzione vuoi prendere?",
       "scelta1": "Vai verso est",
       "scelta2": "Vai verso ovest",
@@ -51,7 +51,7 @@
       "storyIndex2": 0
     },
 
-    { //5
+    {
       "domanda": "Dove sei diretto?",
       "scelta1": "Alla città più vicina",
       "scelta2": "Non lo so",
@@ -61,7 +61,7 @@
       "storyIndex2": 0
     },
 
-    { //6
+    {
       "domanda": "Cosa vuoi rispondere?",
       "scelta1": "Passare la serata",
       "scelta2": "Informazioni",
@@ -71,7 +71,7 @@
       "storyIndex2": 0
     },
 
-    { //7
+    {
       "domanda": "Sembra che il denaro moderno con cui hai pagato non sia stato riconosciuto… cosa vuoi rispondere all’oste?",
       "scelta1": "Soldi",
       "scelta2": "Valuta asiatica",
@@ -81,7 +81,7 @@
       "storyIndex2": 0
     },
 
-    { //8
+    {
       "domanda": "Vuoi accamparti per riposare o preferisci continuare la tua ricerca?",
       "scelta1": "Ti accampi",
       "scelta2": "Non ti accampi",
@@ -91,7 +91,7 @@
       "storyIndex2": 0
     },
 
-    { //9
+    {
       "domanda": "Cosa vuoi fare?",
       "scelta1": "Indaghi",
       "scelta2": "Non indaghi e rimani seduto vicino al falò",
@@ -100,7 +100,7 @@
       "storyIndex1": 0
     },
 
-    { //10
+    {
       "domanda": "Cosa vuoi fare?",
       "scelta1": "Cambi strada",
       "scelta2": "Scappi",
@@ -110,7 +110,7 @@
       "storyIndex2": 0
     },
 
-    { //11
+    {
       "domanda": "Ora che hai un’arma cosa vuoi fare?",
       "scelta1": "Cerchi un corso d'acqua",
       "scelta2": "Rimani nel bosco ",
@@ -120,7 +120,7 @@
       "storyIndex2": 0
     },
 
-    { //12
+    {
       "domanda": "Come vuoi agire di fronte a questa minaccia?",
       "scelta1": "Scappi",
       "scelta2": "Lo affronti",
@@ -130,7 +130,7 @@
       "storyIndex2": 0
     },
 
-    { //13
+    {
       "domanda": "Dovresti controllare dove si trova l’orso ma sei ferito..cosa vuoi fare prima?",
       "scelta1": "Ti medichi",
       "scelta2": "Torni al fiume",
@@ -140,7 +140,7 @@
       "storyIndex2": 0
     },
 
-    { //14
+    {
       "domanda": "Ora che hai del cibo cosa vuoi farne?",
       "scelta1": "Lo cucini",
       "scelta2": "Lo mangi crudo",
@@ -150,7 +150,7 @@
       "storyIndex2": 0
     },
 
-    { //15
+    {
       "domanda": "Sembra pericoloso…come vuoi affrontare il cinghiale?",
       "scelta1": "Ti arrampichi su un albero",
       "scelta2": "Lo uccidi",
@@ -159,7 +159,7 @@
       "storyIndex1": 0
     },
 
-    { //16
+    {
       "domanda": "Potrebbe essere rischioso rimanerci vicino ma si potrebbe sfruttare…cosa vuoi fare?",
       "scelta1": "Fai cadere l'alveare",
       "scelta2": "Torni giù",
@@ -169,7 +169,7 @@
       "storyIndex2": 0
     },
 
-    { //17
+    {
       "domanda": "Vuoi uccidere il cinghiale?",
       "scelta1": "Lo uccidi",
       "scelta2": "Lo risparmi",
@@ -178,7 +178,7 @@
       "storyIndex1": 0
     },
 
-    { //18
+    {
       "domanda": "Ora che hai del cibo cosa vuoi farne?",
       "scelta1": "Lo cucini",
       "scelta2": "Lo mangi crudo",
@@ -188,7 +188,7 @@
       "storyIndex2": 0
     },
 
-    { //19
+    {
       "domanda": "Cosa vuoi fare?",
       "scelta1": "Fuggi",
       "scelta2": "Ti consegni",
@@ -198,7 +198,7 @@
       "storyIndex2": 0
     },
 
-    { //20
+    {
       "domanda": "Cosa vuoi dire al comandante?",
       "scelta1": "Liberatemi",
       "scelta2": "Non potete capire",
@@ -208,7 +208,7 @@
       "storyIndex2": 0
     },
 
-    { //21
+    {
       "domanda": "Cosa vuoi rispondere?",
       "scelta1": "Da dove venite voi",
       "scelta2": "Non lo so",
@@ -218,7 +218,7 @@
       "storyIndex2": 0
     },
 
-    { //22
+    {
       "domanda": "Fuori la battaglia sta continuando, è la tua occasione per metterti al sicuro, però non dimenticare la ragione del tuo viaggio! Cosa vuoi fare?",
       "scelta1": "Scappi",
       "scelta2": "Rimani nella tenda",
@@ -228,7 +228,7 @@
       "storyIndex2": 0
     },
 
-    { //23
+    {
       "domanda": "Ora sei armato: puoi difenderti o attaccare. Cosa vuoi fare?",
       "scelta1": "Rimani nascosto",
       "scelta2": "Attacchi",
@@ -238,7 +238,7 @@
       "storyIndex2": 0
     },
 
-    { //24
+    {
       "domanda": "Ora è tutto calmo, il capitano dorme e il DalSZ è a portata di mano. Cosa vuoi fare?",
       "scelta1": "Prendi il DalSZ",
       "scelta2": "Uccidi il capitano",
@@ -248,7 +248,7 @@
       "storyIndex2": 0
     },
 
-    { //25
+    {
       "domanda": "È giunto il momento decisivo. Come vuoi comportarti con il capitano?",
       "scelta1": "Gli spari",
       "scelta2": "Ti allei",
@@ -258,7 +258,7 @@
       "storyIndex2": 0
     },
 
-    { //26
+    {
       "domanda": "Cosa vuoi rispondere al capitano?",
       "scelta1": "Sono qui per aiutarti",
       "scelta2": "Non ti voglio fare del male",
@@ -268,7 +268,7 @@
       "storyIndex2": 0
     },
 
-    { //27
+    {
       "domanda": "Il momento è delicato...cosa puoi dire per ottenere la fiducia del capitano?",
       "scelta1": "Stringiamo un patto",
       "scelta2": "Ti posso curare",
@@ -281,101 +281,71 @@
   ],
 
   "stories": [
-//0
+
     "La scienza ha fatto progressi che dieci anni fa erano inimmaginabili: nuove tecnologie, innovazioni in ambito medico… e ora un uomo qualunque, un ingegnere come altri, nel suo garage, dopo infiniti tentativi, ha dato vita a qualcosa di impensabile anche in questo tempo, aprendo una nuova frontiera per il genere umano: una macchina del tempo! \n Cosa fare? Se si venisse a sapere in giro, lo Stato sequestrerebbe il macchinario… no il nostro pioniere del tempo intende tenere per sé la sua invenzione, almeno fino a che non l’avrà provata. \n Parte per il suo primo viaggio: una cosa veloce in un luogo isolato, in modo da non modificare il corso del tempo tramite contatti indesiderati. Tornato con successo decide di riprovare, così il 14 agosto 2026 parte per un secondo viaggio con destinazione Treviso un anno dopo. Ma il nostro pioniere non è così fortunato come la prima volta… \n Riaperti gli occhi gli si mostra un paesaggio totalmente diverso da quello che si aspettava: un paesaggio rigoglioso e lussureggiante, un paradiso...che può trasformarsi in un inferno. Voltandosi vede che la macchina è in corto circuito e, cosa più drammatica, non ricorda più chi è o perché è lì. L’unica cosa che ricorda è un componente del macchinario, piccolo ma estremamente importante, chiamato DalSZ, che ora non è al suo posto: deve ritrovarlo ma non ricorda il perché.",
-//1
+
     "Ci sono delle tracce sul terreno, sembrano zoccoli… forse una persona a cavallo ha preso il mio DalSZ",
-//2
+
     "Un suono acuto e intermittente viene dalle sue spalle… <<Il rilevatore!>> il DalSZ infatti era stato progettato per segnalare la sua posizione sul rilevatore, come precauzione. <<Ok, adesso lo potrò ritrovare. Ma perché lo devo ritrovare? Non lo ricordo ma so che lo devo fare, sembra l’unica cosa con un po’ di senso in tutto questo>>. Raccolto lo strumento l’uomo si mette in viaggio seguendo la direzione che gli viene indicata…",
 
-//3   storia 3 e 4 non uniti: dalla 3 inizia la missione 1
     "Lungo il cammino non incontra nessuno tranne un cagnolino; poi, dopo circa tre ore dalla partenza, il nostro pioniere trova una ragazzina a fianco ad un albero che cerca qualcosa: non sembra spaventata da lui, così le chiede che cosa stia cercando e lei risponde: <<Il mio cagnolino, lo hai visto per caso?>>.",
 
-//4
     "<<Sì, ne ho visto uno prima, probabilmente è lui>>. Gli occhi della ragazzina si illuminano pieni di gratitudine.",
 
-//5
     "Lei accetta così i due si mettono in viaggio. Finalmente trovano il cagnolino, ma un lupo lo sta attaccando.",
 
-//6
     "Il nostro pioniere scaglia un masso contro il lupo facendolo scappare. La ragazzina e abbraccia il suo cagnolino ringraziando il nostro pioniere e presentandosi: <<Mi chiamo Julia>>. Lei poi si dirige verso casa, salutando il viaggiatore e lasciandolo al suo destino.",
 
-//7
     "<<Qual è il tuo nome?>> \n <<Julia>> \n <<Ascolta Julia, purtroppo non c’è nulla da fare, è troppo pericoloso affrontare quel lupo. Mi dispiace, non possiamo fare niente>>. Julia scoppia in lacrime ma capisce che purtroppo il nostro pioniere ha ragione. Lei poi si dirige verso casa, salutando il viaggiatore e lasciandolo al suo destino.",
 
-//8
     "Dopo aver avuto le indicazioni di cui ha bisogno, il nostro pioniere si volta e continua il suo viaggio.",
 
-//9
     "<<No mi dispiace non ho visto nessun cagnolino>>. Detto questo si rimette in cammino.",
 
-//10
     "Improvvisamente il cielo inizia a farsi buio, e un lampo illumina il volto del nostro viaggiatore: si scatena un temporale. Il pioniere decide quindi di dirigersi verso una città o una locanda dove passare la notte, sempre che in quel luogo ce ne siano… Un altro lampo illumina la scena, rivelando un sentiero polveroso che probabilmente porta a un qualche luogo abitato dove trovare rifugio. La luce del fulmine ha illuminato anche un albero da cui fuoriesce una manica e la punta di un cappello di quello che, dopo un’osservazione più attenta, si rivela essere un cadavere. Senza farsi troppi scrupoli il viaggiatore prende i vestiti dal cadavere e li indossa così da non dare eccessivamente nell’occhio con abiti moderni. Imboccato il sentiero una scelta lo attende…",
 
-//
     "Si era incamminato verso est da molto tempo quando, fradicio e oramai demoralizzato dal non trovare nulla, inizia a sentire il rumore degli zoccoli di un cavallo: un cowboy! “In che tempo sono finito!” pensa il nostro pioniere. Il mandriano stupito di trovare qualcuno con quel tempaccio nel bosco, gli chiede dove sia diretto.",
 
-//
     "Il mandriano gli dice che la città più vicina si trova nella direzione opposta. Mosso da pietà, nella speranza di una ricompensa o solamente per buon cuore, il cowboy lo fa salire a cavallo e lo porta fino a una locanda.",
 
-//
     "Il mandriano insospettito dall'aspetto enigmatico del viandante, ma impietosito dalle sue condizioni, gli indica solamente la strada per arrivare alla locanda più vicina, nella direzione opposta. Appresa la strada si avvia sperando di raggiungere presto il luogo desiderato",
 
-//
     "Il viaggiatore incamminatosi verso ovest vede farsi sempre più vicina nel buio una luce fioca, come un tizzone che sta per spegnersi definitivamente.",
 
-//
     "Arrivato al saloon <<Alle tre lanterne>>, il nostro pioniere, mantenendo un basso profilo, si dirige verso un tavolo: tante volte ha visto locali di questo tipo nei film, ma resta quasi stupito nel constatare quanto fossero realistiche quelle rappresentazioni. Si accorge che sta attirando parecchi sguardi indesiderati, capisce che prendere una stanza non è conveniente perciò inizia a cercare un luogo in cui nascondersi. Quindi ferma una prostituta che passa di lì. La donna gli chiede che cosa voglia.",
 
-//
     "<<Non dire altro>> dice lei conducendolo in una stanza, ma prima ancora che chiuda la porta il nostro pioniere le rivela che vuole semplicemente un luogo per nascondersi. In risposta lei pretende di essere pagata comunque. Contemporaneamente si accorge che il cappello che il nostro uomo porta non è un cappello qualunque: appartiene a un famoso ricercato. In quel momento uno che dichiara di essere lo sceriffo tenta di sfondare la porta per catturare il fuggitivo, ma prima che ci riesca questi salta dalla finestra e cade su un carro pieno di fieno, si rialza e iniziare a correre senza fermarsi fino all’alba. Almeno ha smesso di piovere...",
 
-//
     "Il nostro pioniere la prende per mano e le sussurra all’orecchio che ha bisogno di un luogo in cui nascondersi e nel frattempo le infila delle banconote nella tasca. Lei allora gli dice di rivolgersi all’oste e si allontana. Poco dopo il nostro viaggiatore si siede al bancone e ordina un bicchierino di whisky ma dopo aver dato i soldi per pagare il conto l’oste chiede cosa siano.",
 
-//
     "<<Questi non sono soldi!>> ribatte l’uomo. Il nostro pioniere gli sussurra di aver bisogno di aiuto e di doversene andare al più presto. Nonostante sia scettico l’uomo lo fa passare dietro il bancone, ma mentre gli apre la porta di servizio lo sceriffo entra urlando: <<Pensavi di poterci scappare vecchia carogna?!>> . In quel momento l’oste si rende conto che il cappello che sta indossando il misterioso uomo appartiene a un famoso criminale ma prima che possa fare qualcosa il nostro pioniere si è già dileguato nel bosco.",
 
-//
     "<<Valuta asiatica?! Beh non vale qui>> perplesso l’oste gli chiede da dove venga ma il nostro pioniere gli risponde di non saperlo così gli chiede aiuto e l’oste, vista la preoccupazione e la paura negli occhi del nostro pioniere lo aiuta e gli indica una porta di servizio sul retro. Da qui fugge dopo aver ringraziato l’uomo. Poco dopo l’oste è colpito da un dettaglio nell’abbigliamento del misterioso viaggiatore: <<Quel cappello! È… è… sì,è l’assassino di quel pover’uomo!>>.",
 
-//
     "Dopo un’intera giornata di cammino conclusasi senza nulla di fatto, tanto calda da costringerlo ad abbandonare il cappello che lo faceva sudare, cala nuovamente la notte e il nostro pioniere deve decidere il da farsi, se accamparsi o meno…",
 
-//
     "Cercati dei rami secchi, il nostro pioniere accende un falò e solo in quel momento si rende conto di quanto sia difficile accendere un fuoco con l’antica tecnica dello sfregamento di due legnetti. Acceso il falò dei rumori lo fanno trasalire.",
 
-//
     "Il nostro viaggiatore inizia a camminare lentamente, armato di un bastone verso i rumori, guidato solo dal suo udito. Ad un certo punto sente qualcosa dietro di lui “Non è niente! dannate foglie secche”, pensa girandosi di scatto. Dopo poco sente qualcosa toccargli le gambe e impietrito dal terrore si guarda attorno ma il buio della notte non gli fa vedere nitidamente. La paura aumenta. Qualcosa afferra il bastone e glielo strappa dalle mani, il nostro pioniere cade a terra terrorizzato scorgendo una figura simile a un cane che si avvicina… è proprio un cane! Scodinzola, è molto felice di aver trovato un bastone e qualcuno con cui giocare, infatti lascia il bastone ai piedi del nostro pioniere che calmatosi si rialza: <<Vuoi che te lo lanci, bello? Su vai a prenderlo!>>. Il bastone cade vicino al falò e appena lo vede il cane inizia ad abbaiare. Avvicinandosi, il viaggiatore si accorge che il cane ha delle vecchie scottature sulla parte sinistra del corpo, così decide di spegnere il falò, tenendo solo una piccola torcia accesa. Il cane allora corre verso il pioniere, gli salta addosso e gli lecca tutta la faccia. Aspettano l’alba insieme, e visto che nessuno è giunto a reclamarlo, capisce che è senza padrone e decide di portarlo con sé appendendogli al collo il ciondolo che fino a quel momento portava come collana, facendolo diventare una splendida medaglietta. Gli dà anche un nome: <<Bobby>>.",
 
-//
     "I rumori si avvicinano sempre di più fino a che appare un cane che abbaia facendolo sobbalzare. Il nostro pioniere allora temendo il peggio prende un bastone per difendersi, ma il cane smette di abbaiare e inizia a scodinzolare guardando il bastone così glielo lancia: una volta preso, il cane torna al falò ma ricomincia ad abbaiare. Vedendo dei vecchi segni di scottature  sul fianco sinistro del cane, il nostro uomo si rende conto che l’animale stava abbaiando al fuoco, decide allora di spegnerlo e subito il cane si calma e corre verso il pioniere, gli salta addosso e lo lecca. Aspettano l’alba insieme, e visto che nessuno è giunto a reclamarlo, capisce che è senza padrone e decide di portarlo con sé appendendogli al collo il ciondolo che fino a quel momento portava come collana, facendolo diventare una splendida medaglietta. Gli dà anche un nome: <<Bobby>>.",
 
-//
     "Non c’è tempo per una pausa è più importante il… la… beh quello che il radar mi sta indicando”. Durante il cammino ogni tanto scorge tra gli alberi una figura che corre…",
 
-//
     "Il nostro pioniere cambia più volte direzione ma si ritrova sempre un’ombra davanti. Finalmente riesce a riconoscere quell’ombra, è quella di un cane dall’aria molto pacifica: gli salta addosso, lo lecca: vuole solamente giocare. Il viaggiatore si accorge che il cane ha delle vecchie scottature sul fianco sinistro e intuisce così che probabilmente teme il fuoco. Il pioniere allora decide di portarlo con sé nel viaggio e gli dà un nome: <<Bobby>>, legandogli al collo una medaglietta che fino a quel momento aveva portato al collo come collana.",
 
-//
     "L’ombra però lo insegue minacciosa ed essendo più veloce lo raggiunge, perciò il nostro pioniere decide di afferrare un ramo per potersi difendere... lo spettro però si rivela essere un cane, che si ferma e inizia a scodinzolare. Il pioniere capisce così che l’animale vuole solo giocare: tutta la paura provata in precedenza era vana. Comincia a giocare lanciandogli il bastone fino a quando si fa giorno. Il viaggiatore si accorge che il cane ha delle vecchie scottature sul fianco sinistro e intuisce così che probabilmente teme il fuoco. A questo punto il pioniere lascia il cane e riprende il suo cammino però questi lo segue più volte. Cerca allora di capire se l’animale abbia un nome o un padrone, ma si accorge che non porta nessun tipo di segno identificativo. Decide di portarlo con sé, gli dà un nome: <<Bobby>> e una medaglietta: una collanina con ciondolo che aveva portato al collo come collana fino a quel momento. \n I due allora ripresero il cammino alla ricerca del DalSZ, e ad ogni passo sotto la leggera brezza mattutina con la luce dall’alba che li illuminava, il loro legame diventava più forte ad ogni passo.",
 
-// 
     "Dopo una lunga camminata il nostro pioniere, stanco ma determinato, sente i morsi sempre più stringenti della fame: la sua priorità è ora procacciarsi del cibo. Mentre si inoltra nel bosco trova delle pietre affilate e aguzze, delle selci, così ne prende un paio e lega una di queste ad un robusto amo che ha appena staccato.",
 
-//
     "Il nostro pioniere insieme al suo nuovo fidato compagno di avventure, decide di cercare un corso d’acqua e di pescare qualcosa con la sua rudimentale arma proprio come facevano i vecchi lupi di mare per catturare balene. Trova finalmente un torrente dove un giovane orso sta già cacciando: la madre potrebbe essere vicina ma nel tempo passato a osservare di nascosto l’animale non si fa viva, così il nostro affamato pioniere decide di uscire allo scoperto. L’orso ringhia e si alza minacciosamente, forse per difesa, in fondo è poco più che un cucciolo…",
 
-//
     "Intimorito il nostro pioniere batte in ritirata insieme a Bobby che con atteggiamento minaccioso abbaia all’orso. Correndo nel bosco inciampa su una radice e uno pezzo appuntito della stessa lo ferisce. Si rende conto che l’orso non li sta più inseguendo.",
 
-//
     "Il nostro pioniere ferito deve assolutamente medicarsi…in quel momento si accorge che Bobby non si trova più con lui così lo chiama più volte e dopo poco arriva con delle strane erbe tra i denti. Il viaggiatore sa che queste hanno proprietà medicinali infatti leniscono presto la sua ferita. Tenendole legate strette attorno alla gamba si rialza e torna al fiume. Vede che l’orso se n’è andato lasciandolo libero di pescare.",
 
-//
     "Tornato al fiume si rende conto che l’orso se n’è andato ma le fitte che derivavano dalla ferita lo fanno barcollare. In quel momento vede che Bobby sta attirando la sua attenzione verso un ciuffo di erbe particolari, erbe che conosce per le loro proprietà medicinali: sono in grado di lenire le ferite e le scottature. Dopo averle strette attorno alla gamba si rialza e il dolore passa in breve tempo permettendogli di pescare.",
 
-//
     "Non facendosi intimorire, il nostro pioniere si avvicina all’animale e prende l’arma con l’intento di usarla come se fosse una lancia. Ma pochi attimi prima di attaccare, il suo fido amico gli ringhia contro come a volergli suggerire di non iniziare uno scontro: “in effetti c’è abbastanza pesce per tutti, non occorre fare del male al povero orso” riflette. Così segue per un po’ la riva del fiume allontanandosi e lasciando l’animale alla sua caccia."
   ]
 }
