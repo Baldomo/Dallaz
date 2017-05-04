@@ -18,7 +18,7 @@ public class CustomButton extends JButton {
     private static final Color HOVER_COLOR = new Color(0, 0, 0, 210);
 
     // Costanti del font del pulsante
-    private static final String FONT_FILE = "Resources/Cutrims.otf";
+    private String FONT_FILE = "Resources/digital.ttf";
     private static final Color DEFAULT_FONT_COLOR = Color.WHITE;
     private static final Color PRESSED_FONT_COLOR = Color.BLACK.brighter();
     private float fontSize = 50f;
@@ -26,7 +26,7 @@ public class CustomButton extends JButton {
 
     public CustomButton(int larghezza, int altezza, @Nullable String testo) {
         super();
-        _initFont();
+        setFont();
         this.setText(testo);
 
         this.setPreferredSize(new Dimension(larghezza, altezza));
@@ -39,8 +39,19 @@ public class CustomButton extends JButton {
     /*
     *  _initFont() inizializza la variabile font dal file di font indicato in FONT_FILE e cambia la font del pulsante
     */
-    private void _initFont() {
+    private void setFont() {
         try {
+            font = Font.createFont(Font.TRUETYPE_FONT, getClass().getClassLoader().getResourceAsStream(FONT_FILE));
+            font = font.deriveFont(Font.PLAIN, fontSize);
+            setFont(font);
+        } catch (FontFormatException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setFont(String FONT_FILE) {
+        try {
+            this.FONT_FILE = FONT_FILE;
             font = Font.createFont(Font.TRUETYPE_FONT, getClass().getClassLoader().getResourceAsStream(FONT_FILE));
             font = font.deriveFont(Font.PLAIN, fontSize);
             setFont(font);
