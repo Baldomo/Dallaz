@@ -51,8 +51,6 @@ public class CustomTextPanel extends JPanel {
     }
 
     private void _initTesto(String testo) {
-        //testoh.setText(testo);
-        _animateText(testo);
         testoh.setForeground(FONT_COLOR);
 
         testoh.setEditable(false);
@@ -70,9 +68,11 @@ public class CustomTextPanel extends JPanel {
         } catch (FontFormatException | IOException e) {
             e.printStackTrace();
         }
+
+        this.addPropertyChangeListener(propertyChange -> _animateText(testo, this.isShowing()));
     }
 
-    private void _animateText(String testo) {
+    private void _animateText(String testo, boolean timerController) {
         testoh.setText(null);
         Timer timer = new Timer(50, actionEvent -> {
             if (charCounter < testo.length()) {
@@ -82,7 +82,8 @@ public class CustomTextPanel extends JPanel {
                 ((Timer) actionEvent.getSource()).stop();
             }
         });
-        timer.start();
+        if (timerController) timer.start();
+        else timer.stop();
         charCounter = 0;
     }
 
