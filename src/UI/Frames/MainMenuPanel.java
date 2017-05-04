@@ -5,9 +5,7 @@ import Utilities.ImageResizer;
 import com.sun.istack.internal.NotNull;
 
 import javax.imageio.ImageIO;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
+import javax.sound.sampled.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -110,8 +108,9 @@ public class MainMenuPanel extends JPanel {
             clip.start();
             clip.loop(6);
             mainMenuMusic = clip;
-        } catch(Exception ex) {
-            System.out.println("Error with playing sound.");
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
+            e.printStackTrace();
+            System.out.println("Errore play musica!");
         }
     }
 

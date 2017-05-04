@@ -22,6 +22,7 @@ public class ChoicesPanel extends JPanel {
 
     public CustomButton btn1;
     public CustomButton btn2;
+    private CustomTextPanel testoh;
 
     private static final String FONT_FILE = "Resources/Cutrims.otf";
     private Color FONT_COLOR = Color.WHITE;
@@ -45,13 +46,13 @@ public class ChoicesPanel extends JPanel {
     }
 
     private void _initText() {
-        JLabel testoh = new JLabel(storyNode.getDomanda());
+
         testoh.setBackground(new Color(0, 0, 0, 175));
     }
 
     private void _initButtons() {
-        btn1 = new CustomButton(0, 0, storyNode.getScelta1());
-        btn2 = new CustomButton(0, 0, storyNode.getScelta2());
+        btn1 = new CustomButton(root.getWidth()/5, root.getHeight()/8, storyNode.getScelta1());
+        btn2 = new CustomButton(root.getWidth()/5, root.getHeight()/8, storyNode.getScelta2());
     }
 
     private void _initPanel() {
@@ -61,6 +62,11 @@ public class ChoicesPanel extends JPanel {
         layout.setAutoCreateContainerGaps(true);
         layout.linkSize(SwingConstants.HORIZONTAL, btn1, btn2);
         layout.linkSize(SwingConstants.VERTICAL, btn1, btn2);
+
+        layout.setVerticalGroup(
+                layout.createSequentialGroup()
+                    //.addComponent(testoh)
+        );
     }
 
     @Override
