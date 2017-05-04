@@ -5,10 +5,15 @@ import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
 
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Leonardo Baldin on 02/05/17.
@@ -18,15 +23,17 @@ public class CustomTextPanel extends JPanel {
 
     private int charCounter = 0;
 
+    private Clip typewriterSound;
+
     private static final Color OVERLAY_COLOR = new Color(0, 0, 0, 120);
 
     private JTextArea testoh = new JTextArea();
     private JFrame root;
     private EmptyBorder border = null;
 
-    private static final String FONT_FILE = "Resources/Cutrims.otf";
+    private static final String FONT_FILE = "Resources/Typewriter.ttf";
     private Color FONT_COLOR = Color.WHITE;
-    private float fontSize = 36f;
+    private float fontSize = 24f;
     private Font font;
 
     private Image BACKGROUND_IMAGE = null;
@@ -46,7 +53,7 @@ public class CustomTextPanel extends JPanel {
         this.setBorder(border);
         this.setLayout(new BorderLayout());
         _initTesto(testo);
-
+        
         setMinimumSize(new Dimension(larghezza, altezza));
     }
 
@@ -74,17 +81,42 @@ public class CustomTextPanel extends JPanel {
 
     private void _animateText(String testo, boolean timerController) {
         testoh.setText(null);
+
         Timer timer = new Timer(50, actionEvent -> {
             if (charCounter < testo.length()) {
                 testoh.append(Character.toString(testo.charAt(charCounter)));
                 charCounter++;
             } else {
+                stopKeystrokeSound();
                 ((Timer) actionEvent.getSource()).stop();
             }
         });
-        if (timerController) timer.start();
-        else timer.stop();
+
+        if (timerController){
+            timer.start();
+            playKeystrokeSound();
+        }
+        else {
+            timer.stop();
+        }
         charCounter = 0;
+    }
+
+    public void playKeystrokeSound(){
+        try {
+            AudioInputStream audioInputStream1 = AudioSystem.getAudioInputStream(new File("src/Resources/typewriter.wav").getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream1);
+            clip.start();
+            clip.loop(6);
+            typewriterSound = clip;
+        } catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+        }
+    }
+
+    public void stopKeystrokeSound(){
+        typewriterSound.stop();
     }
 
     public void setBackgroundImage(String path) {

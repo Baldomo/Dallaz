@@ -22,7 +22,7 @@ import java.io.IOException;
 public class MainMenuPanel extends JPanel {
 
     private static Image BACKGROUND_IMAGE = null;
-    private static final String IMAGE_NAME = "/Resources/saloon.png";
+    private static final String IMAGE_NAME = "/Resources/background.jpg";
 
     private JFrame root = null;
 

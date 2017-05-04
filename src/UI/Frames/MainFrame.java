@@ -43,7 +43,7 @@ public class MainFrame {
 
             menu.btn1.addActionListener(e -> {
                 menu.stopMusic();
-                //swapToChoicePanel(fd);
+                swapToChoicePanel(fd);
                 swapToTextPanel(prova);
             });
 
